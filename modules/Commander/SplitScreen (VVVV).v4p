@@ -1,0 +1,295 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\SplitScreen (VVVV).v4p" systemname="SplitScreen (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\SplitScreen (VVVV).v4p" scrollx="240" scrolly="2730">
+   <NODE systemname="ScreenInfo (Windows)" filename="%VVVV%\addonpack\lib\nodes\plugins\ScreenInfo.dll" nodename="ScreenInfo (Windows)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="3288" top="2682" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="ResolutionXY" visible="1">
+   </PIN>
+   <PIN pinname="Refresh" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Working AreaXY" visible="1">
+   </PIN>
+   <PIN pinname="Resolution OffsetXY" visible="1">
+   </PIN>
+   <PIN pinname="Working Area OffsetXY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1764" top="3198" width="1740" height="732">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1764" top="3198" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="px">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1920,1080">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6369" top="4539" width="720" height="348">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6369" top="4539" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.5,1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Zip (2d)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (2d)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2808" top="6114" width="1356" height="276">
+   </BOUNDS>
+   <PIN pinname="Input 2XY" visible="1" slicecount="2" values="960,1032">
+   </PIN>
+   <PIN pinname="OutputXY" visible="1">
+   </PIN>
+   <PIN pinname="Input 1XY" visible="1" slicecount="4" values="0,0,960,0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Slot Generation by splitting Screens|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2790" top="5100" width="804" height="276">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="4" values="23040,12384,23040,12384">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="pos">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2508" top="4170" width="684" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2508" top="4170" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.5,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="5490" top="5100" width="324" height="276">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="4" values="23040,12384,23040,12384">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="size">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1500" top="4170" width="684" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="4170" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Zip (2d)" nodename="Zip (2d)" componentmode="Hidden" id="8" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" left="1764" top="4518" width="828" height="276">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1XY" visible="1">
+   </PIN>
+   <PIN pinname="Input 2XY" visible="1">
+   </PIN>
+   <PIN pinname="OutputXY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (Value Vector)" nodename="Select (Value Vector)" componentmode="Hidden" id="9" filename="%VVVV%\addonpack\lib\nodes\plugins\VectorSized.dll">
+   <BOUNDS type="Node" left="3636" top="3258" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Select" slicecount="1" values="2">
+   </PIN>
+   <BOUNDS type="Box" left="3636" top="3258">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Select (Value Vector)" nodename="Select (Value Vector)" componentmode="Hidden" id="10" filename="%VVVV%\addonpack\lib\nodes\plugins\VectorSized.dll">
+   <BOUNDS type="Node" left="4464" top="3258" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Select" slicecount="1" values="2">
+   </PIN>
+   <BOUNDS type="Box" left="4464" top="3258">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="2790" top="5565" width="1740" height="276">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2805" top="6705" width="4230" height="1500">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2805" top="6705" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="16" visible="1" values="0,0,840,1010,840,0,840,1010,1680,0,960,1040,2640,0,960,1040">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="px">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Slots">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3255" top="1500" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3255" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Refresh">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Working AreaXY" dstnodeid="1" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="2648" y="3082">
+   </LINKPOINT>
+   <LINKPOINT x="2812" y="3062">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Input 1XY">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Input 2XY">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="OutputXY" dstnodeid="4" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="4" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="11" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="11" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="OutputXY" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="3" dstpinname="Input 1XY">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="3" dstpinname="Input 2XY">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Refresh">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Working AreaXY" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Working Area OffsetXY" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="6" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Input 2">
+   </LINK>
+   <BOUNDS type="Window" left="7320" top="2940" width="7860" height="8205">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   </PATCH>

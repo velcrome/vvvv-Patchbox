@@ -1,0 +1,103 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOMagic (VVVV) help.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="4890" top="4845" width="8250" height="6015">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
+   </BOUNDS>
+   <BOUNDS type="Box" left="225" top="225" width="5100" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|IOMagic (VVVV)|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" visible="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="225" top="600" width="5100" height="600">
+   </BOUNDS>
+   <BOUNDS type="Box" left="225" top="600" width="5100" height="600">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Add this Module to your root.v4p (use Alt + R to access it) and save it.|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2910" top="1155" width="12030" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2910" top="1155" width="3615" height="2280">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Create Rows x Cols IOboxes AutoMagically!&cr;&lf;&cr;&lf;examples(doubleclick and type):&cr;&lf;&cr;&lf;To create 3x3 Value IOBox:   &tab;v3x3     (or    d3x3)&cr;&lf;To create 5x2 Integer IOBox:&tab;i5x2&cr;&lf;To create 8x1 Bang IOBox:&tab;b8&cr;&lf;To create 2x2 Toggle IOBox:&tab;t2x2&cr;&lf;To create 9x9 Color IOBox:&tab;c9x9&cr;&lf;To create 1x4 StringIOBox:&tab;s1x4|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOMagic (VVVV)" filename="IOMagic (VVVV).v4p" nodename="IOMagic (VVVV)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="300" top="2985" width="1950" height="270">
+   </BOUNDS>
+   <PIN pinname="Width Multiplier" visible="1">
+   </PIN>
+   <PIN pinname="Height Multiplier" visible="1">
+   </PIN>
+   <PIN pinname="Show Grid" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="465" top="2070" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="465" top="2070" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="500">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Width Multiplier">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1425" top="2055" width="735" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1425" top="2055" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="500">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Height Multiplier">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2205" top="2445" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2205" top="2445" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Show Grid">
+   </LINK>
+   </PATCH>

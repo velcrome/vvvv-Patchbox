@@ -1,0 +1,141 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Commander (VVVV).v4p" scrollx="0" scrolly="0" systemname="Commander (VVVV)" filename="C:\Users\velcrome\Desktop\Commander (VVVV).v4p">
+   <BOUNDS type="Window" left="8100" top="6945" width="6960" height="3765">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE systemname="Zip (Value Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value Bin)" componentmode="Hidden" id="156" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1449" top="1443" width="2415" height="270">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="171" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="810" top="2040" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="810" top="2040" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="175" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1020" top="675" width="1170" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1020" top="675" width="1170" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Alt + Spacebar|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="176" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3075" top="285" width="1170" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3075" top="285" width="1950" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Alt + Left / Right Cursor|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="177" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="375" top="285" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="375" top="285" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="15">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="u/px">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="PickRectangle (VVVV)" filename="Commander\PickRectangle (VVVV).v4p" nodename="PickRectangle (VVVV)" componentmode="Hidden" id="168">
+   <BOUNDS type="Node" left="3023" top="1068" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="8460" height="8416">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3315" top="2355" width="10155" height="8415">
+   </BOUNDS>
+   <PIN pinname="Slots" visible="1" slicecount="16" values="0,0,840,1010,840,0,840,1010,1680,0,960,1040,2640,0,960,1040">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="168" srcpinname="Rectangle" dstnodeid="156" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="SplitScreen (VVVV)" filename="Commander\SplitScreen (VVVV).v4p" nodename="SplitScreen (VVVV)" componentmode="Hidden" id="174">
+   <BOUNDS type="Node" left="4235" top="676" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="301" top="0" width="7869" height="8205">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7320" top="2940" width="7860" height="8205">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="174" srcpinname="Slots" dstnodeid="168" dstpinname="Slots">
+   </LINK>
+   <NODE systemname="Hide (VVVV)" filename="Commander\Hide (VVVV).v4p" nodename="Hide (VVVV)" componentmode="Hidden" id="167">
+   <BOUNDS type="Node" left="1455" top="1065" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="6732" height="11560">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11505" top="630" width="6720" height="11550">
+   </BOUNDS>
+   <PIN pinname="Patch Bounds" visible="1">
+   </PIN>
+   <PIN pinname="Units per Pixel" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="167" srcpinname="Patch Bounds" dstnodeid="156" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="177" srcpinname="Y Output Value" dstnodeid="167" dstpinname="Units per Pixel" linkstyle="Bezier">
+   <LINKPOINT x="475" y="780">
+   </LINKPOINT>
+   <LINKPOINT x="1985" y="780">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="MoveAndResize (VVVV ActivePatch)" filename="Commander\MoveAndResize (VVVV ActivePatch).v4p" nodename="MoveAndResize (VVVV ActivePatch)" componentmode="Hidden" id="169">
+   <BOUNDS type="Node" left="790" top="2388" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="675" top="285" width="7872" height="9564">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7935" top="4860" width="10260" height="9555">
+   </BOUNDS>
+   <PIN pinname="Mark Patch as Changed" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units per Pixel" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="156" srcpinname="Output" dstnodeid="169" dstpinname="Force to Patch Bounds">
+   </LINK>
+   <LINK srcnodeid="171" srcpinname="Y Output Value" dstnodeid="169" dstpinname="Mark Patch as Changed">
+   </LINK>
+   <LINK srcnodeid="177" srcpinname="Y Output Value" dstnodeid="169" dstpinname="Units per Pixel" linkstyle="Bezier">
+   <LINKPOINT x="475" y="1448">
+   </LINKPOINT>
+   <LINKPOINT x="2090" y="1448">
+   </LINKPOINT>
+   </LINK>
+   </PATCH>

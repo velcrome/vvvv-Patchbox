@@ -1,0 +1,65 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Commander (VVVV) help.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="4890" top="4845" width="7830" height="4185">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
+   </BOUNDS>
+   <BOUNDS type="Box" left="225" top="225" width="5100" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Commander (VVVV)|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" visible="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="225" top="600" width="5100" height="600">
+   </BOUNDS>
+   <BOUNDS type="Box" left="225" top="600" width="5100" height="600">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Add this Module to your root.v4p (use Alt + R to access it) and save it in your root.|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="Commander (VVVV)" componentmode="Hidden" id="0" systemname="Commander (VVVV)" filename="Commander (VVVV).v4p">
+   <BOUNDS type="Node" left="375" top="1695" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="375" top="1695" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8100" top="6945" width="6960" height="3765">
+   </BOUNDS>
+   </NODE>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="300" top="2145" width="12030" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="300" top="2145" width="3645" height="1020">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Use Alt + Space to quickly hide and refresh the active patch window, or use Alt + Left/Right to snapmove it in the way usual windows behave when using Win + Left/Right|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4200" top="2115" width="12030" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4200" top="2115" width="2895" height="1425">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|So far, all instances of a patch will be affected. This might have weird side effects.&cr;&lf;&cr;&lf;But generally, it should make patching with a broken gui easier.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>
