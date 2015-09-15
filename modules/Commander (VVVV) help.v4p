@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Commander (VVVV) help.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4890" top="4845" width="7830" height="4185">
+   <BOUNDS type="Window" left="4884" top="4836" width="7824" height="4956">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -25,19 +25,23 @@
    </PIN>
    </NODE>
    <NODE nodename="Commander (VVVV)" componentmode="Hidden" id="0" systemname="Commander (VVVV)" filename="Commander (VVVV).v4p">
-   <BOUNDS type="Node" left="375" top="1695" width="0" height="0">
+   <BOUNDS type="Node" left="2523" top="1863" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="375" top="1695" width="0" height="0">
+   <BOUNDS type="Box" left="2523" top="1863" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Window" left="8100" top="6945" width="6960" height="3765">
+   <BOUNDS type="Window" left="10968" top="6552" width="7308" height="5328">
    </BOUNDS>
+   <PIN pinname="Patch Window Change" visible="1">
+   </PIN>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
    </NODE>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="34.0.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="300" top="2145" width="12030" height="270">
+   <BOUNDS type="Node" left="348" top="3033" width="12030" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="300" top="2145" width="3645" height="1020">
+   <BOUNDS type="Box" left="348" top="3033" width="3645" height="1020">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Use Alt + Space to quickly hide and refresh the active patch window, or use Alt + Left/Right to snapmove it in the way usual windows behave when using Win + Left/Right|">
    </PIN>
@@ -49,11 +53,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4200" top="2115" width="12030" height="270">
+   <BOUNDS type="Node" left="4200" top="2118" width="12030" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4200" top="2115" width="2895" height="1425">
+   <BOUNDS type="Box" left="4200" top="2118" width="3000" height="2064">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|So far, all instances of a patch will be affected. This might have weird side effects.&cr;&lf;&cr;&lf;But generally, it should make patching with a broken gui easier.|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|So far, all instances of a patch will be affected. This might have unwanted side effects.&cr;&lf;&cr;&lf;Only patch windows are affected, Renderers and plugin GUI windows are not.&cr;&lf;&cr;&lf;Nonetheless, it should make patching with a legacy gui easier.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -62,4 +66,28 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="ChangePatch" filename="Common\ChangePatch.v4p" nodename="Common\ChangePatch.v4p" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="1968" top="2376" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1968" top="2376" width="8319" height="5556">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11520" top="4020" width="8316" height="5556">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <PIN pinname="Patch Change" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="PatchAlias (VVVV ActivePatch)" nodename="PatchAlias (VVVV ActivePatch)" componentmode="Hidden" id="6" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="1968" top="1332" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Patch" dstnodeid="7" dstpinname="Patch">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Patch Window Change" dstnodeid="7" dstpinname="Patch Change">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Patch" dstnodeid="0" dstpinname="Patch">
+   </LINK>
    </PATCH>

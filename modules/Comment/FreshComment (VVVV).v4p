@@ -1,19 +1,13 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Comment\FreshComment (VVVV).v4p" scrollx="0" scrolly="2625" systemname="FreshComment (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Comment\FreshComment (VVVV).v4p">
-   <BOUNDS type="Window" left="5250" top="3225" width="18000" height="6195">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Comment\FreshComment (VVVV).v4p" scrollx="0" scrolly="0" systemname="FreshComment (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Comment\FreshComment (VVVV).v4p">
+   <BOUNDS type="Window" left="264" top="2808" width="13152" height="8364">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="34.0.0">
    </PACK>
-   <NODE systemname="PatchAlias (VVVV ActivePatch)" nodename="PatchAlias (VVVV ActivePatch)" componentmode="Hidden" id="0" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="1065" top="285" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Patch" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="GetPatch (VVVV)" nodename="GetPatch (VVVV)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="1080" top="777" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Patch" visible="1">
+   <PIN pinname="Patch" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Patch Changes" visible="1">
    </PIN>
@@ -55,7 +49,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Element" visible="1">
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="XPath" visible="1">
    </PIN>
@@ -162,11 +156,7 @@
    <PIN pinname="Input String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Patch" dstnodeid="1" dstpinname="Patch" hiddenwhenlocked="0">
-   </LINK>
    <LINK srcnodeid="1" srcpinname="Patch Changes" dstnodeid="3" dstpinname="XML">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Element" dstnodeid="4" dstpinname="Element">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="4" dstpinname="XPath">
    </LINK>
@@ -275,5 +265,99 @@
    <LINK srcnodeid="7" srcpinname="Value" dstnodeid="11" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="21" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="22" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1092" top="276" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1092" top="276" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Patch">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output Node" dstnodeid="1" dstpinname="Patch">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="27" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="10893" top="3624" width="3570" height="765">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10893" top="3624" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="2" visible="1" values="//BOUNDS[@type=&apos;Box&apos;]/@width,//BOUNDS[@type=&apos;Box&apos;]/@height">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyChildTag/MyChildsChildTag">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetAttributes (XElement ByXPath)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="GetAttributes (XElement ByXPath)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="10413" top="4584" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="XPath" visible="1">
+   </PIN>
+   <PIN pinname="Attributes" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="10413" top="4584">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Attribute (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Attribute (XElement Split)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="10398" top="4989" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Attribute" visible="1">
+   </PIN>
+   <PIN pinname="Value" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="10398" top="4989">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Attributes" dstnodeid="25" dstpinname="Attribute">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output String" dstnodeid="26" dstpinname="XPath">
+   </LINK>
+   <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="10620" top="5595" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Value" dstnodeid="24" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10635" top="6195" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10635" top="6195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Size">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="23" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Elements" dstnodeid="26" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Element" dstnodeid="4" dstpinname="Element">
    </LINK>
    </PATCH>

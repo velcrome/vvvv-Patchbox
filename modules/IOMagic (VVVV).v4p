@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOMagic (VVVV).v4p" systemname="IOMagic" filename="C:\dev\vvvv\vvvv-Patchbox\IOMagic.v4p" scrollx="2700" scrolly="16170">
-   <BOUNDS type="Window" left="25500" top="435" width="14625" height="12570">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOMagic (VVVV).v4p" systemname="IOMagic" filename="C:\dev\vvvv\vvvv-Patchbox\IOMagic.v4p" scrollx="1344" scrolly="16512">
+   <BOUNDS type="Window" left="11520" top="0" width="11520" height="12384">
    </BOUNDS>
    <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="267">
    <BOUNDS type="Node" left="12765" top="15840" width="100" height="100">
@@ -23,9 +23,9 @@
    <LINK srcnodeid="267" srcpinname="Output" dstnodeid="268" dstpinname="Input 1">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="279" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="2265" top="18975" width="100" height="100">
+   <BOUNDS type="Node" left="4029" top="20943" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2265" top="18975" width="480" height="480">
+   <BOUNDS type="Box" left="4029" top="20943" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -174,42 +174,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="386" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8130" top="5430" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8130" top="5430" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="500">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Width Multiplier|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="387" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="9510" top="5430" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="9510" top="5430" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="500">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Height Multiplier|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="390" systemname="IOBox (String)">
    <BOUNDS type="Node" left="4215" top="3180" width="2715" height="270">
    </BOUNDS>
@@ -226,14 +190,14 @@
    </NODE>
    <LINK srcnodeid="279" srcpinname="Y Output Value" dstnodeid="283" dstpinname="Input 1">
    </LINK>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="34.0.0">
    </PACK>
    <NODE systemname="FreshComment (VVVV)" filename="Comment\FreshComment (VVVV).v4p" nodename="Comment\FreshComment (VVVV).v4p" componentmode="Hidden" id="392">
    <BOUNDS type="Node" left="5730" top="5610" width="1410" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="3206" top="4597" width="10098" height="6204">
    </BOUNDS>
-   <BOUNDS type="Window" left="5250" top="3225" width="18000" height="6195">
+   <BOUNDS type="Window" left="264" top="2808" width="13152" height="8364">
    </BOUNDS>
    <PIN pinname="Comment" visible="1">
    </PIN>
@@ -244,6 +208,8 @@
    <PIN pinname="Position" visible="1">
    </PIN>
    <PIN pinname="Act!" visible="1">
+   </PIN>
+   <PIN pinname="Patch" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="392" srcpinname="Node ID" dstnodeid="267" dstpinname="Input" linkstyle="Bezier" hiddenwhenlocked="0">
@@ -814,20 +780,6 @@
    <LINKPOINT x="16515" y="11295">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="484">
-   <BOUNDS type="Node" left="8130" top="5925" width="1455" height="270">
-   </BOUNDS>
-   <PIN pinname="X" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1">
-   </PIN>
-   <PIN pinname="XY" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="386" srcpinname="Y Output Value" dstnodeid="484" dstpinname="X">
-   </LINK>
-   <LINK srcnodeid="387" srcpinname="Y Output Value" dstnodeid="484" dstpinname="Y">
-   </LINK>
    <NODE systemname="Zip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (String)" componentmode="Hidden" id="485">
    <BOUNDS type="Node" left="8400" top="10920" width="345" height="270">
    </BOUNDS>
@@ -853,15 +805,13 @@
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="487">
    <BOUNDS type="Node" left="8145" top="11880" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="2" values="500,500">
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="484" srcpinname="XY" dstnodeid="487" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="486" srcpinname="Output" dstnodeid="487" dstpinname="Input 2" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="Attribute (XElement Join)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Attribute (XElement Join)" componentmode="Hidden" id="493">
@@ -1259,7 +1209,7 @@
    <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="619">
    <BOUNDS type="Node" left="8190" top="16245" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Bin Size" slicecount="1" values="2" visible="1">
+   <PIN pinname="Bin Size" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1469,5 +1419,43 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="659" srcpinname="Y Output Value" dstnodeid="619" dstpinname="Bin Size">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="660" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="3480" top="4932" width="1560" height="768">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3480" top="4932" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Patch">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="660" srcpinname="Output Node" dstnodeid="392" dstpinname="Patch">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="661" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8148" top="4992" width="1116" height="756">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8148" top="4992" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="500,500">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="u">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Cell Size|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="500">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="661" srcpinname="Y Output Value" dstnodeid="487" dstpinname="Input 1">
    </LINK>
    </PATCH>

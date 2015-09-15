@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Hide (VVVV).v4p" systemname="HideOnSpace (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\HideOnSpace (VVVV).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Commander\Hide (VVVV).v4p" systemname="HideOnSpace (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\HideOnSpace (VVVV).v4p">
    <NODE systemname="GetPatch (VVVV)" nodename="GetPatch (VVVV)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2172" top="4728" width="100" height="100">
    </BOUNDS>
@@ -41,18 +41,6 @@
    </PIN>
    <BOUNDS left="2145" top="5733" type="Box">
    </BOUNDS>
-   </NODE>
-   <NODE systemname="PatchAlias (VVVV ActivePatch)" nodename="PatchAlias (VVVV ActivePatch)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="2172" top="4308" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Patch" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
    </NODE>
    <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="2172" top="6240" width="100" height="100">
@@ -378,8 +366,6 @@
    </LINK>
    <LINK srcnodeid="12" srcpinname="Z" dstnodeid="18" dstpinname="Select">
    </LINK>
-   <LINK srcnodeid="3" srcpinname="Patch" dstnodeid="0" dstpinname="Patch">
-   </LINK>
    <LINK srcnodeid="0" srcpinname="Patch Description" dstnodeid="2" dstpinname="XML Input">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="2" dstpinname="XPath Query">
@@ -418,6 +404,18 @@
    </LINK>
    <BOUNDS type="Window" left="11505" top="630" width="6720" height="11550">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="34.0.0">
    </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="25" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="432" top="3948" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="432" top="3948" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Patch">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="0" dstpinname="Patch">
+   </LINK>
    </PATCH>

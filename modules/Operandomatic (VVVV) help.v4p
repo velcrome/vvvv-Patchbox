@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Operandomatic (VVVV) help.v4p" scrollx="0" scrolly="480">
-   <BOUNDS type="Window" left="1950" top="2175" width="7230" height="4740">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Operandomatic (VVVV) help.v4p" scrollx="60" scrolly="0">
+   <BOUNDS type="Window" left="10236" top="2472" width="7224" height="6144">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -24,7 +24,7 @@
    <PIN pinname="Output String" slicecount="1" visible="0" values="||">
    </PIN>
    </NODE>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="34.0.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
    <BOUNDS type="Node" left="435" top="3435" width="12030" height="270">
@@ -41,65 +41,59 @@
    </PIN>
    </NODE>
    <NODE nodename="Operandomatic (VVVV)" componentmode="Hidden" id="0" systemname="Operandomatic (VVVV)" filename="Operandomatic (VVVV).v4p">
-   <BOUNDS type="Node" left="2250" top="1260" width="100" height="100">
+   <BOUNDS type="Node" left="1230" top="2244" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2250" top="1260" width="0" height="0">
+   <BOUNDS type="Box" left="1230" top="2244" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Window" left="3960" top="645" width="17820" height="13515">
    </BOUNDS>
    <PIN pinname="Node Changes" visible="1">
    </PIN>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="PatchAlias (VVVV ActivePatch)" nodename="PatchAlias (VVVV ActivePatch)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="600" top="2100" width="100" height="100">
+   <BOUNDS type="Node" left="852" top="1224" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Patch" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="SetPatch (VVVV)" nodename="SetPatch (VVVV)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="2085" top="2760" width="100" height="100">
+   <NODE systemname="ChangePatch" filename="Common\ChangePatch.v4p" nodename="Common\ChangePatch.v4p" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="840" top="2808" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Patch" visible="1">
+   <BOUNDS type="Box" left="669" top="336" width="8319" height="5556">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11520" top="4020" width="8316" height="5556">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="XML Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Add to UNDO history" slicecount="1" values="0">
+   <PIN pinname="Patch Change" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="6" dstpinname="Patch">
+   <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="10" dstpinname="Patch">
    </LINK>
-   <NODE systemname="AsString (Object)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsString (Object)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="2250" top="1605" width="100" height="100">
+   <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="0" dstpinname="Patch">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Node Changes" dstnodeid="10" dstpinname="Patch Change">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2556" top="1452" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Object" visible="1">
+   <BOUNDS type="Node" left="2556" top="1452" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="String" visible="1">
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Node Changes" dstnodeid="7" dstpinname="Object">
-   </LINK>
-   <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="2235" top="1980" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="7" srcpinname="String" dstnodeid="8" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="2235" top="2340" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="9" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="6" dstpinname="XML Input">
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enable">
    </LINK>
    </PATCH>
