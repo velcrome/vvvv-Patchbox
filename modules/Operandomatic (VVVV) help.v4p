@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Operandomatic (VVVV) help.v4p" scrollx="60" scrolly="0">
    <BOUNDS type="Window" left="10236" top="2472" width="7224" height="6144">
    </BOUNDS>
@@ -24,7 +24,7 @@
    <PIN pinname="Output String" slicecount="1" visible="0" values="||">
    </PIN>
    </NODE>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
    <BOUNDS type="Node" left="435" top="3435" width="12030" height="270">
@@ -60,23 +60,7 @@
    <PIN pinname="Patch" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ChangePatch" filename="Common\ChangePatch.v4p" nodename="Common\ChangePatch.v4p" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="840" top="2808" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="669" top="336" width="8319" height="5556">
-   </BOUNDS>
-   <BOUNDS type="Window" left="11520" top="4020" width="8316" height="5556">
-   </BOUNDS>
-   <PIN pinname="Patch" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Patch Change" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="10" dstpinname="Patch">
-   </LINK>
    <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="0" dstpinname="Patch">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Node Changes" dstnodeid="10" dstpinname="Patch Change">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="2556" top="1452" width="480" height="480">
@@ -95,5 +79,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enable">
+   </LINK>
+   <NODE systemname="ChangePatch (VVVV XElement)" filename="Common\ChangePatch (VVVV XElement).v4p" nodename="ChangePatch (VVVV XElement)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="840" top="2805" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="669" top="336" width="8319" height="5556">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11520" top="4020" width="8316" height="5556">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Patch Change" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="10" dstpinname="Patch">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Node Changes" dstnodeid="10" dstpinname="Patch Change">
    </LINK>
    </PATCH>

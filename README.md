@@ -10,15 +10,15 @@ If you have questions or want to share an idea just head over to the vvvv contri
 Authors: 
 ========
 
-velcrome
-sagashi
-beyon
-rmueller
+* velcrome
+* sagashi
+* beyon
+* rmueller
 
 
 License
 =======
 
-![MIT License](https://opensource.org/licenses/MIT)
+[MIT License](https://opensource.org/licenses/MIT)
 
 

@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOMagic (VVVV) help.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="0" top="4836" width="8088" height="5136">
    </BOUNDS>
@@ -24,7 +24,7 @@
    <PIN pinname="Output String" slicecount="1" visible="0" values="||">
    </PIN>
    </NODE>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
    <BOUNDS type="Node" left="3390" top="1125" width="12030" height="270">
@@ -80,6 +80,46 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Enable">
    </PIN>
    </NODE>
+   <NODE systemname="PatchAlias (VVVV ActivePatch)" nodename="PatchAlias (VVVV ActivePatch)" componentmode="Hidden" id="28" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="168" top="2181" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1920" top="1320" width="792" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1920" top="1320" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="500,500">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="u">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Cell Size|">
+   </PIN>
+   </NODE>
+   <NODE systemname="ChangePatch (VVVV XElement)" filename="Common\ChangePatch (VVVV XElement).v4p" nodename="ChangePatch (VVVV XElement)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="165" top="3705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="933" width="8319" height="5556">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11520" top="4020" width="8316" height="5556">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <PIN pinname="Patch Change" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Patch" dstnodeid="27" dstpinname="Patch">
+   </LINK>
    <NODE systemname="IOMagic (VVVV)" filename="IOMagic (VVVV).v4p" nodename="IOMagic (VVVV)" componentmode="Hidden" id="17">
    <BOUNDS type="Node" left="1368" top="3120" width="100" height="100">
    </BOUNDS>
@@ -101,53 +141,17 @@
    </PIN>
    <PIN pinname="Cell Size" visible="1" slicecount="2" values="500,500">
    </PIN>
+   <PIN pinname="Node Changes" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Enable">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Show Grid">
    </LINK>
-   <NODE systemname="ChangePatch" filename="Common\ChangePatch.v4p" nodename="Common\ChangePatch.v4p" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="171" top="3711" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="0" top="933" width="8319" height="5556">
-   </BOUNDS>
-   <BOUNDS type="Window" left="11520" top="4020" width="8316" height="5556">
-   </BOUNDS>
-   <PIN pinname="Patch" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="17" srcpinname="Changed Nodes" dstnodeid="27" dstpinname="Patch Change">
-   </LINK>
-   <NODE systemname="PatchAlias (VVVV ActivePatch)" nodename="PatchAlias (VVVV ActivePatch)" componentmode="Hidden" id="28" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="168" top="2181" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Patch" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="28" srcpinname="Patch" dstnodeid="27" dstpinname="Patch">
-   </LINK>
    <LINK srcnodeid="28" srcpinname="Patch" dstnodeid="17" dstpinname="Patch">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1920" top="1320" width="792" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1920" top="1320" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="500,500">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="u">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Cell Size|">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Cell Size">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Node Changes" dstnodeid="27" dstpinname="Patch Change">
    </LINK>
    </PATCH>

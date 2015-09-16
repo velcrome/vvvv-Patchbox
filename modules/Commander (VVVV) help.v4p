@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Commander (VVVV) help.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="4884" top="4836" width="7824" height="4956">
    </BOUNDS>
@@ -31,12 +31,12 @@
    </BOUNDS>
    <BOUNDS type="Window" left="10968" top="6552" width="7308" height="5328">
    </BOUNDS>
-   <PIN pinname="Patch Window Change" visible="1">
+   <PIN pinname="Patch Window Change" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Patch" visible="1">
    </PIN>
    </NODE>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
    <BOUNDS type="Node" left="348" top="3033" width="12030" height="270">
@@ -66,8 +66,16 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="ChangePatch" filename="Common\ChangePatch.v4p" nodename="Common\ChangePatch.v4p" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="1968" top="2376" width="0" height="0">
+   <NODE systemname="PatchAlias (VVVV ActivePatch)" nodename="PatchAlias (VVVV ActivePatch)" componentmode="Hidden" id="6" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="1968" top="1332" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Patch" dstnodeid="0" dstpinname="Patch">
+   </LINK>
+   <NODE systemname="ChangePatch (VVVV XElement)" filename="Common\ChangePatch (VVVV XElement).v4p" nodename="ChangePatch (VVVV XElement)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="1965" top="2370" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1968" top="2376" width="8319" height="5556">
    </BOUNDS>
@@ -75,19 +83,11 @@
    </BOUNDS>
    <PIN pinname="Patch" visible="1">
    </PIN>
-   <PIN pinname="Patch Change" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="PatchAlias (VVVV ActivePatch)" nodename="PatchAlias (VVVV ActivePatch)" componentmode="Hidden" id="6" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="1968" top="1332" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Patch" visible="1">
+   <PIN pinname="Patch Change" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Patch" dstnodeid="7" dstpinname="Patch">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Patch Window Change" dstnodeid="7" dstpinname="Patch Change">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Patch" dstnodeid="0" dstpinname="Patch">
    </LINK>
    </PATCH>
