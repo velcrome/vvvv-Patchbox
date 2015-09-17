@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOMagic (VVVV).v4p" systemname="IOMagic" filename="C:\dev\vvvv\vvvv-Patchbox\IOMagic.v4p" scrollx="5745" scrolly="4950">
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOMagic (VVVV).v4p" systemname="IOMagic" filename="C:\dev\vvvv\vvvv-Patchbox\IOMagic.v4p" scrollx="1065" scrolly="8370">
    <BOUNDS type="Window" left="11520" top="0" width="13020" height="12375">
    </BOUNDS>
    <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="267">
@@ -1329,7 +1329,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Last recognized Comment|">
    </PIN>
-   <PIN pinname="Pin Visibility" slicecount="1" values="Hidden">
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
    </PIN>
    </NODE>
    <LINK srcnodeid="694" srcpinname="Output" dstnodeid="695" dstpinname="Input String">

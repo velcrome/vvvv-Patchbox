@@ -1,0 +1,141 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOScaler (VVVV) help.v4p" systemname="IOScaler (VVVV) help" filename="C:\vvvv\_contributions\lib\nodes\modules\reaktant\IOScaler\IOScaler (VVVV) help.v4p">
+   <BOUNDS type="Window" left="2625" top="1065" width="9000" height="10110">
+   </BOUNDS>
+   <NODE systemname="IOScaler (VVVV)" filename="IOScaler (VVVV).v4p" nodename="IOScaler (VVVV)" componentmode="InAWindow" id="0">
+   <BOUNDS type="Node" left="3750" top="7755" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3750" top="7755">
+   </BOUNDS>
+   <PIN pinname="Size">
+   </PIN>
+   <BOUNDS type="Window" left="12105" top="1200" width="8490" height="12705">
+   </BOUNDS>
+   <PIN pinname="Changed Nodes" visible="1">
+   </PIN>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="270" top="7785" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="270" top="7785" width="765" height="1155">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="9">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="5" values="0,1,2,3,4">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="270" top="6510" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="270" top="6510" width="2115" height="1110">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="vvvv">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="20">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="7" nodename="IOBox (String)" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <BOUNDS height="255" left="180" top="525" type="Node" width="570">
+   </BOUNDS>
+   <BOUNDS height="240" left="180" top="525" type="Box" width="3615">
+   </BOUNDS>
+   <BOUNDS height="160" left="9060" top="15120" type="Window" width="215">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|Change font size according to height of IOBox|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="165" top="165" type="Node" width="915">
+   </BOUNDS>
+   <BOUNDS height="390" left="165" top="165" type="Box" width="4095">
+   </BOUNDS>
+   <BOUNDS height="160" left="9060" top="15120" type="Window" width="215">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|IOScaler - Help|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="255" left="180" top="1335" type="Node" width="570">
+   </BOUNDS>
+   <BOUNDS height="2325" left="180" top="1335" type="Box" width="5700">
+   </BOUNDS>
+   <BOUNDS height="160" left="9060" top="15120" type="Window" width="215">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|- place IOScaler inside patch where font sizes of IOBoxes should be scaled&cr;&lf;- start scaling an IOBox, then hold Shift&cr;&lf;&cr;&lf;limitations:&cr;&lf;- only 1 box at a time&cr;&lf;- does not take enumerations amount into account&cr;&lf;&cr;&lf;bug: IOBox sometimes not movable after scaling&cr;&lf;workaround: scale again without holding Shift&cr;&lf;does not happen when pressing Shift after Left Click|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="15">
+   <BOUNDS type="Node" left="3255" top="4980" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3255" top="4980" width="3600" height="1245">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="55">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
+   <BOUNDS type="Node" left="765" top="4575" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="765" top="4575" width="2280" height="1410">
+   </BOUNDS>
+   <PIN pinname="Size" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="123">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ChangePatch (VVVV XElement)" filename="Common\ChangePatch (VVVV XElement).v4p" nodename="ChangePatch (VVVV XElement)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="3180" top="8820" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Patch Change" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Patch" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Node Changes" dstnodeid="19" dstpinname="Patch Change">
+   </LINK>
+   <NODE systemname="PatchAlias (VVVV ActivePatch)" nodename="PatchAlias (VVVV ActivePatch)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="2715" top="6960" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Patch" dstnodeid="19" dstpinname="Patch">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Patch" dstnodeid="0" dstpinname="Patch">
+   </LINK>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   </PATCH>
