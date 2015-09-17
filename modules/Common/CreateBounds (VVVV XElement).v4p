@@ -99,9 +99,11 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Location">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
@@ -246,7 +248,7 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="4" dstpinname="Value">
    </LINK>
-   <BOUNDS type="Window" left="-1" top="-1" width="4995" height="7410">
+   <BOUNDS type="Window" left="19650" top="8055" width="4995" height="7410">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
