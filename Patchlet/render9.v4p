@@ -1,0 +1,69 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\Patchlet\render9.v4p" systemname="render9" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Patchlet\render9.v4p">
+   <BOUNDS type="Window" left="12444" top="1764" width="9000" height="6000">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="2940" top="2292" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2940" top="2292" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="14616" top="6024" width="6216" height="4980">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="2916" top="1920" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Layer 6" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Camera (Transform Orbit)" filename="%VVVV%\addonpack\lib\nodes\modules\Transform\Camera (Transform Orbit).v4p" nodename="Camera (Transform Orbit)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="4272" top="1872" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="PerfMeter (Debug)" filename="%VVVV%\lib\nodes\modules\Debug\PerfMeter (Debug).v4p" nodename="PerfMeter (Debug)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="4824" top="1428" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AxisAndGrid (DX9)" filename="%VVVV%\lib\nodes\modules\EX9\AxisAndGrid (DX9).v4p" nodename="AxisAndGrid (DX9)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="1668" top="1452" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Layer" dstnodeid="8" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="9" dstpinname="Layers" linkstyle="VHV">
+   <LINKPOINT x="10456" y="8804">
+   </LINKPOINT>
+   <LINKPOINT x="2948" y="2164">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="View" dstnodeid="9" dstpinname="View" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Projection" dstnodeid="9" dstpinname="Projection" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Layer" dstnodeid="8" dstpinname="Layer 6">
+   </LINK>
+   </PATCH>

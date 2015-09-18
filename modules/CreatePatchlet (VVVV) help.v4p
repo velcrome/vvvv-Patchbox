@@ -1,0 +1,145 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\CreatePatchlet (VVVV) help.v4p" scrollx="60" scrolly="0">
+   <BOUNDS type="Window" left="12288" top="6600" width="7224" height="6144">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
+   </BOUNDS>
+   <BOUNDS type="Box" left="225" top="225" width="5100" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|CreatePatchlet (VVVV)|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" visible="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="225" top="600" width="5100" height="600">
+   </BOUNDS>
+   <BOUNDS type="Box" left="225" top="600" width="5100" height="600">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Add this Module to your root.v4p (use Alt + R to access it) and save it.|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   <NODE systemname="PatchAlias (VVVV ActivePatch)" nodename="PatchAlias (VVVV ActivePatch)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="852" top="1224" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6228" top="1632" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6228" top="1632" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ChangePatch (VVVV XElement)" filename="Common\ChangePatch (VVVV XElement).v4p" nodename="ChangePatch (VVVV XElement)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="840" top="2805" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="669" top="336" width="8319" height="5556">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11520" top="4020" width="8316" height="5556">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Patch Change" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Add to UNDO history" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Mark Patch as Changed" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="10" dstpinname="Patch">
+   </LINK>
+   <NODE nodename="CreatePatchlet (VVVV)" componentmode="Hidden" id="0" systemname="CreatePatchlet (VVVV)" filename="CreatePatchlet (VVVV).v4p">
+   <BOUNDS type="Node" left="1224" top="2244" width="5328" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1224" top="2244" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1140" top="1644" width="17820" height="13224">
+   </BOUNDS>
+   <PIN pinname="Node Changes" visible="1">
+   </PIN>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="Prefix" visible="1">
+   </PIN>
+   <PIN pinname="Patchlet Directory" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="0" dstpinname="Patch">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enable">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Node Changes" dstnodeid="10" dstpinname="Patch Changes">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4392" top="1776" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4392" top="1776" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="make">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="make">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Prefix">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output String" dstnodeid="0" dstpinname="Prefix">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="18" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3348" top="1716" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3348" top="1716" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\Patchlet">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Output String" dstnodeid="0" dstpinname="Patchlet Directory">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2496" top="2736" width="6015" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2496" top="2736" width="3615" height="2430">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Quickly insert the contents of one of your patchlets. &cr;&lf;&cr;&lf;Name them in an easy manner like: &cr;&lf;&cr;&lf;render9.v4p&cr;&lf;&cr;&lf;After refreshing you can then insert them by typing a comment like &cr;&lf;&cr;&lf;make render9&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>

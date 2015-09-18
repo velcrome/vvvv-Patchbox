@@ -1,0 +1,765 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\LoadNode (VVVV XElement).v4p" systemname="LoadNode (VVVV XElement)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\LoadNode (VVVV XElement).v4p" scrollx="6936" scrolly="936">
+   <NODE id="4" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Patch Contents|">
+   </PIN>
+   <BOUNDS type="Box" left="7707" top="15444" width="810" height="285">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7707" top="15444" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="4728" top="1680" width="12000" height="10704">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="8664" top="2868" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\..\..\..\apps\code\vvvv_45beta34_x64\lib\nodes\modules\String\file.txt">
+   </PIN>
+   <PIN pinname="Read" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="15612" top="516" width="2076" height="612">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15612" top="516" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="modules\Patchlet\render9.v4p">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8184" top="1392" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8184" top="1392" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Read">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Read">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="16" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="9876" top="14844" width="6948" height="11472">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9876" top="14844" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|&lt;PATCH nodename=&quot;C:\dev\vvvv\vvvv-Patchbox\modules\Patchlet\render9.v4p&quot; systemname=&quot;render9&quot; filename=&quot;C:\dev\vvvv\vvvv-Patchbox\modules\Patchlet\render9.v4p&quot;&gt;&cr;&lf;   &lt;BOUNDS type=&quot;Window&quot; left=&quot;12444&quot; top=&quot;1764&quot; width=&quot;9000&quot; height=&quot;6000&quot;&gt;&cr;&lf;   &lt;/BOUNDS&gt;&cr;&lf;   &lt;NODE systemname=&quot;Renderer (EX9)&quot; nodename=&quot;Renderer (EX9)&quot; componentmode=&quot;Hidden&quot; id=&quot;0&quot;&gt;&cr;&lf;   &lt;BOUNDS type=&quot;Node&quot; left=&quot;2088&quot; top=&quot;3780&quot; width=&quot;100&quot; height=&quot;100&quot;&gt;&cr;&lf;   &lt;/BOUNDS&gt;&cr;&lf;   &lt;BOUNDS type=&quot;Box&quot; left=&quot;2088&quot; top=&quot;3780&quot; width=&quot;2400&quot; height=&quot;1800&quot;&gt;&cr;&lf;   &lt;/BOUNDS&gt;&cr;&lf;   &lt;BOUNDS type=&quot;Window&quot; left=&quot;14616&quot; top=&quot;6024&quot; width=&quot;6216&quot; height=&quot;4980&quot;&gt;&cr;&lf;   &lt;/BOUNDS&gt;&cr;&lf;   &lt;PIN pinname=&quot;Layers&quot; visible=&quot;1&quot;&gt;&cr;&lf;   &lt;/PIN&gt;&cr;&lf;   &lt;PIN pinname=&quot;View&quot; visible=&quot;1&quot;&gt;&cr;&lf;   &lt;/PIN&gt;&cr;&lf;   &lt;PIN pinname=&quot;Projection&quot; visible=&quot;1&quot;&gt;&cr;&lf;   &lt;/PIN&gt;&cr;&lf;   &lt;/NODE&gt;&cr;&lf;   &lt;NODE systemname=&quot;Group (EX9)&quot; nodename=&quot;Group (EX9)&quot; componentmode=&quot;Hidden&quot; id=&quot;1&quot;&gt;&cr;&lf;   &lt;BOUNDS type=&quot;Node&quot; left=&quot;2076&quot; top=&quot;2964&quot; width=&quot;100&quot; height=&quot;100&quot;&gt;&cr;&lf;   &lt;/BOUNDS&gt;&cr;&lf;   &lt;PIN pinname=&quot;Layer 1&quot; visible=&quot;1&quot;&gt;&cr;&lf;   &lt;/PIN&gt;&cr;&lf;   &lt;PIN pinname=&quot;Layer 2&quot; visible=&quot;1&quot;&gt;&cr;&lf;   &lt;/PIN&gt;&cr;&lf;   &lt;PIN pinname=&quot;Layer&quot; visible=&quot;1&quot;&gt;&cr;&lf;   &lt;/PIN&gt;&cr;&lf;   &lt;/NODE&gt;&cr;&lf;   &lt;NODE systemname=&quot;Camera (Transform Orbit)&quot; filename=&quot;%VVVV%\addonpack\lib\nodes\modules\Transform\Camera (Transform Orbit).v4p&quot; nodename=&quot;Camera (Transform Orbit)&quot; componentmode=&quot;Hidden&quot; id=&quot;2&quot;&gt;&cr;&lf;   &lt;BOUNDS type=&quot;Node&quot; left=&quot;3504&quot; top=&quot;3300&quot; width=&quot;100&quot; height=&quot;100&quot;&gt;&cr;&lf;   &lt;/BOUNDS&gt;&cr;&lf;   &lt;PIN pinname=&quot;View&quot; visible=&quot;1&quot;&gt;&cr;&lf;   &lt;/PIN&gt;&cr;&lf;   &lt;PIN pinname=&quot;Projection&quot; visible=&quot;1&quot;&gt;&cr;&lf;   &lt;/PIN&gt;&cr;&lf;   &lt;/NODE&gt;&cr;&lf;   &lt;NODE systemname=&quot;PerfMeter (Debug)&quot; filename=&quot;%VVVV%\lib\nodes\modules\Debug\PerfMeter (Debug).v4p&quot; nodename=&quot;PerfMeter (Debug)&quot; componentmode=&quot;Hidden&quot; id=&quot;3&quot;&gt;&cr;&lf;   &lt;BOUNDS type=&quot;Node&quot; left=&quot;2328&quot; top=&quot;2496&quot; width=&quot;100&quot; height=&quot;100&quot;&gt;&cr;&lf;   &lt;/BOUNDS&gt;&cr;&lf;   &lt;PIN pinname=&quot;Layer&quot; visible=&quot;1&quot;&gt;&cr;&lf;   &lt;/PIN&gt;&cr;&lf;   &lt;/NODE&gt;&cr;&lf;   &lt;NODE systemname=&quot;AxisAndGrid (DX9)&quot; filename=&quot;%VVVV%\lib\nodes\modules\EX9\AxisAndGrid (DX9).v4p&quot; nodename=&quot;AxisAndGrid (DX9)&quot; componentmode=&quot;Hidden&quot; id=&quot;4&quot;&gt;&cr;&lf;   &lt;BOUNDS type=&quot;Node&quot; left=&quot;816&quot; top=&quot;2460&quot; width=&quot;100&quot; height=&quot;100&quot;&gt;&cr;&lf;   &lt;/BOUNDS&gt;&cr;&lf;   &lt;PIN pinname=&quot;Layer&quot; visible=&quot;1&quot;&gt;&cr;&lf;   &lt;/PIN&gt;&cr;&lf;   &lt;/NODE&gt;&cr;&lf;   &lt;LINK srcnodeid=&quot;4&quot; srcpinname=&quot;Layer&quot; dstnodeid=&quot;1&quot; dstpinname=&quot;Layer 1&quot;&gt;&cr;&lf;   &lt;/LINK&gt;&cr;&lf;   &lt;LINK srcnodeid=&quot;3&quot; srcpinname=&quot;Layer&quot; dstnodeid=&quot;1&quot; dstpinname=&quot;Layer 2&quot;&gt;&cr;&lf;   &lt;/LINK&gt;&cr;&lf;   &lt;LINK srcnodeid=&quot;1&quot; srcpinname=&quot;Layer&quot; dstnodeid=&quot;0&quot; dstpinname=&quot;Layers&quot;&gt;&cr;&lf;   &lt;/LINK&gt;&cr;&lf;   &lt;LINK srcnodeid=&quot;2&quot; srcpinname=&quot;View&quot; dstnodeid=&quot;0&quot; dstpinname=&quot;View&quot;&gt;&cr;&lf;   &lt;/LINK&gt;&cr;&lf;   &lt;LINK srcnodeid=&quot;2&quot; srcpinname=&quot;Projection&quot; dstnodeid=&quot;0&quot; dstpinname=&quot;Projection&quot;&gt;&cr;&lf;   &lt;/LINK&gt;&cr;&lf;   &lt;PACK Name=&quot;addonpack&quot; Version=&quot;34.0.0&quot;&gt;&cr;&lf;   &lt;/PACK&gt;&cr;&lf;   &lt;/PATCH&gt;|">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsXElement (XML)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsXElement (XML)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="8676" top="3312" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XML" visible="1">
+   </PIN>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Content" dstnodeid="15" dstpinname="XML">
+   </LINK>
+   <NODE systemname="GetElements (XElement ByXPath)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="GetElements (XElement ByXPath)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="9900" top="3912" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="Name" slicecount="1" values="./">
+   </PIN>
+   <PIN pinname="Elements" visible="1">
+   </PIN>
+   <PIN pinname="XPath" slicecount="1" visible="1" values="/PATCH/LINK">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Element" dstnodeid="12" dstpinname="Element">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="10320" top="2988" width="1188" height="660">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10320" top="2988" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="2" visible="1" values="/PATCH/NODE,/PATCH/LINK">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyChildTag/MyChildsChildTag">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (XElement)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (XElement)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="7692" top="15048" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="4" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="AsString (Object)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsString (Object)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="9888" top="4488" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Object" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Elements" dstnodeid="21" dstpinname="Object">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="33" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="10632" top="4308" width="2772" height="324">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10632" top="4308" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|((left=&quot;||x=&quot;)||(top=&quot;||y=&quot;)||(id=&quot;))(\w+)(&quot;)|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Substitute (String)" nodename="Substitute (String)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="9888" top="14352" width="2580" height="276">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="left=&quot;2&quot;left=&quot;22&quot;left=&quot;12&quot;left=&quot;42&quot;">
+   </PIN>
+   <PIN pinname="To" visible="1">
+   </PIN>
+   <PIN pinname="From" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="30">
+   <BOUNDS type="Node" left="11160" top="13968" width="960" height="276">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="12552" top="6504" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="13596" top="12972" width="336" height="276">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="0" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="28" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="12576" y="10020">
+   </LINKPOINT>
+   <LINKPOINT x="13608" y="9780">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="13596" top="13452" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="SubType" slicecount="1" values="|Integer (MinInt .. MaxInt)|">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="12408" top="13968" width="1008" height="276">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="26" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="13596" y="13842">
+   </LINKPOINT>
+   <LINKPOINT x="12708" y="13842">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="31" dstpinname="To">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="31" dstpinname="From">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="String" dstnodeid="31" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AsXElement (XML)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsXElement (XML)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="7716" top="14628" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XML" visible="1">
+   </PIN>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="35" dstpinname="XML">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Element" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="12" dstpinname="XPath">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="36">
+   <BOUNDS type="Node" left="13764" top="2640" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13764" top="2640" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Offset Position|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="14280" top="12300" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|x, y or id|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="28" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="14280" y="12894">
+   </LINKPOINT>
+   <LINKPOINT x="13908" y="12654">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Bounds (Spectral Vector)" filename="%VVVV%\addonpack\lib\nodes\plugins\VectorSized.dll" nodename="Bounds (Spectral Vector)" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="14412" top="9828" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Center" visible="1">
+   </PIN>
+   <PIN pinname="Minimum" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="13788" top="10404" width="1092" height="276">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="2" values="3942,7314">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Minimum" dstnodeid="46" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="16" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="27" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="13764" top="3444" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Output" dstnodeid="46" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Unzip (Value Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value Bin)" componentmode="Hidden" id="51">
+   <BOUNDS type="Node" left="14400" top="9096" width="1380" height="276">
+   </BOUNDS>
+   <PIN pinname="Input Bin Size" visible="1" slicecount="1" values="-2">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output 3" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="PeakSpread (Spreads)" nodename="PeakSpread (Spreads)" componentmode="Hidden" id="52">
+   <BOUNDS type="Node" left="14700" top="8724" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Spread Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="Output" dstnodeid="51" dstpinname="Input Bin Size">
+   </LINK>
+   <NODE systemname="RegExpr (String)" filename="" nodename="RegExpr (String)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="11172" top="4920" width="2124" height="276">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="4" values="left=&quot;2&quot;,left=&quot;22&quot;,left=&quot;12&quot;,left=&quot;42&quot;">
+   </PIN>
+   <PIN pinname="Regular Expression" visible="1" slicecount="1" values="|((left=&quot;||x=&quot;)||(top=&quot;||y=&quot;)||(id=&quot;))(\w+)(&quot;)|">
+   </PIN>
+   <PIN pinname="To" visible="1">
+   </PIN>
+   <PIN pinname="Matches" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Case Sensitive Match" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Match 2" visible="1">
+   </PIN>
+   <PIN pinname="Match 1" visible="1">
+   </PIN>
+   <PIN pinname="Errors" visible="1">
+   </PIN>
+   <PIN pinname="Match 3" visible="1">
+   </PIN>
+   <PIN pinname="Match 4" visible="1">
+   </PIN>
+   <PIN pinname="Match 6" visible="1">
+   </PIN>
+   <PIN pinname="Match 5" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="String" dstnodeid="53" dstpinname="Input">
+   </LINK>
+   <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="57" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="15384" top="6960" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname=".. To [" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="58">
+   <BOUNDS type="Node" left="16776" top="6504" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Case Sensitive" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="y">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Match 3" dstnodeid="58" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="11924" y="5844">
+   </LINKPOINT>
+   <LINKPOINT x="16768" y="5844">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="60">
+   <BOUNDS type="Node" left="16620" top="6972" width="1740" height="276">
+   </BOUNDS>
+   <PIN pinname="X" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Z" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="61" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="15864" top="7404" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="XYZ" dstnodeid="61" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Output" dstnodeid="61" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="62" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="15888" top="7764" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Bin Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="62" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Inverse Output" dstnodeid="60" dstpinname="Y">
+   </LINK>
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="63">
+   <BOUNDS type="Node" left="17568" top="6504" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="id">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Match 4" dstnodeid="63" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="12264" y="5844">
+   </LINKPOINT>
+   <LINKPOINT x="17568" y="5844">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Inverse Output" dstnodeid="60" dstpinname="Z">
+   </LINK>
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="64">
+   <BOUNDS type="Node" left="15960" top="6504" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="x">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Match 2" dstnodeid="64" dstpinname="Input 1" linkstyle="VHV">
+   <LINKPOINT x="11580" y="5844">
+   </LINKPOINT>
+   <LINKPOINT x="15960" y="5844">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Inverse Output" dstnodeid="60" dstpinname="X">
+   </LINK>
+   <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="65">
+   <BOUNDS type="Node" left="16248" top="6996" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="68">
+   <BOUNDS type="Node" left="14700" top="3384" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14700" top="3384" width="792" height="240">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Offset ID|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="948">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="Match 6" dstnodeid="30" dstpinname="Input 3" linkstyle="Bezier">
+   <LINKPOINT x="12908" y="9536">
+   </LINKPOINT>
+   <LINKPOINT x="11632" y="9604">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Match 1" dstnodeid="30" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="11192" y="9542">
+   </LINKPOINT>
+   <LINKPOINT x="11176" y="9610">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Match 1" dstnodeid="26" dstpinname="Input 1" linkstyle="Bezier">
+   <LINKPOINT x="11156" y="9702">
+   </LINKPOINT>
+   <LINKPOINT x="12460" y="9462">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Match 6" dstnodeid="26" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Match 5" dstnodeid="30" dstpinname="Input 2" linkstyle="Bezier">
+   <LINKPOINT x="12572" y="9542">
+   </LINKPOINT>
+   <LINKPOINT x="11404" y="9610">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="52" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="40" dstpinname="Index">
+   </LINK>
+   <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="16056" top="8196" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname=".. To [" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="71">
+   <BOUNDS type="Node" left="18576" top="6504" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="68" srcpinname="Y Output Value" dstnodeid="71" dstpinname="Input">
+   <LINKPOINT x="18588" y="4992">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="71" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output" dstnodeid="70" dstpinname=".. To [">
+   </LINK>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="72">
+   <BOUNDS type="Node" left="16056" top="8712" width="2568" height="276">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="Output" dstnodeid="72" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="Output" dstnodeid="72" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="xyZ (3d XY)" filename="" nodename="xyZ (3d XY)" componentmode="Hidden" id="73">
+   <BOUNDS type="Node" left="13788" top="11544" width="2316" height="276">
+   </BOUNDS>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="72" srcpinname="Output" dstnodeid="73" dstpinname="Z">
+   </LINK>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="44">
+   <BOUNDS type="Node" left="14400" top="9468" width="924" height="276">
+   </BOUNDS>
+   <PIN pinname="X" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="Z" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Output 1" dstnodeid="44" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="51" srcpinname="Output 2" dstnodeid="44" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="XY" dstnodeid="45" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="51" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Output" dstnodeid="73" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="XYZ" dstnodeid="40" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="13848" y="12060">
+   </LINKPOINT>
+   <LINKPOINT x="14268" y="12060">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Match 5" dstnodeid="29" dstpinname="Input">
+   </LINK>
+   <NODE id="47" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Box" left="14076" top="10764" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14076" top="10764" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" pintype="Configuration" values="u">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" pintype="Input" values="0">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" pintype="Configuration" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" pintype="Configuration" values="2">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" pintype="Configuration" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" pintype="Configuration" values="4">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Behavior" pintype="Configuration" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Minimum" pintype="Configuration" slicecount="1" values="-99999999">
+   </PIN>
+   <PIN pinname="Maximum" pintype="Configuration" slicecount="1" values="99999999">
+   </PIN>
+   <PIN pinname="Show Value" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Slider" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Behavior" pintype="Configuration" slicecount="1" values="Endless">
+   </PIN>
+   <PIN pinname="Show Connections" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Background" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Sticky Slider" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Allow MouseOffset" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Constraints" pintype="Configuration" slicecount="1" values="scX">
+   </PIN>
+   <PIN pinname="Slider Alignment" pintype="Configuration" slicecount="1" values="Grid">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X Input Value" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X Output Value" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Y Output Value" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="Output" dstnodeid="47" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Inverse Output" dstnodeid="65" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="18288" y="6882">
+   </LINKPOINT>
+   <LINKPOINT x="16308" y="6882">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="8640" top="2424" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output String" dstnodeid="75" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="16912" y="1652">
+   </LINKPOINT>
+   <LINKPOINT x="7400" y="1888">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="75" srcpinname="Output" dstnodeid="20" dstpinname="Filename">
+   </LINK>
+   </PATCH>

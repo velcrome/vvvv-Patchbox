@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\SetPin (VVVV XElement).v4p" scrollx="300" scrolly="615" systemname="SetPin (VVVV XElement)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\SetPin (VVVV XElement).v4p">
-   <BOUNDS type="Window" left="27465" top="3705" width="11670" height="7395">
+   <BOUNDS type="Window" left="9024" top="2448" width="11664" height="7392">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="34.0.0">
    </PACK>
    <NODE systemname="CreatePin (VVVV XElement)" filename="CreatePin (VVVV XElement).v4p" nodename="CreatePin (VVVV XElement)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2580" top="2175" width="100" height="100">
@@ -18,18 +18,6 @@
    <BOUNDS type="Window" left="9180" top="3420" width="12000" height="7095">
    </BOUNDS>
    </NODE>
-   <NODE systemname="CreateNode (VVVV XElement)" filename="CreateNode (VVVV XElement).v4p" nodename="CreateNode (VVVV XElement)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="2565" top="3225" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Node" visible="1">
-   </PIN>
-   <PIN pinname="Children" visible="1">
-   </PIN>
-   <PIN pinname="Attributes" visible="1">
-   </PIN>
-   <PIN pinname="Attributes Bin Size" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="2" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="2565" top="4260" width="795" height="240">
    </BOUNDS>
@@ -40,8 +28,6 @@
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Element" dstnodeid="1" dstpinname="Children">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4590" top="855" width="795" height="240">
    </BOUNDS>
@@ -81,7 +67,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1125" top="855" width="1260" height="285">
+   <BOUNDS type="Box" left="1125" top="855" width="1308" height="612">
    </BOUNDS>
    <BOUNDS type="Node" left="1125" top="855" width="0" height="0">
    </BOUNDS>
@@ -108,8 +94,6 @@
    <PIN pinname="Attribute" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Attribute" dstnodeid="1" dstpinname="Attributes">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
    <BOUNDS type="Box" left="5250" top="2130" width="795" height="240">
    </BOUNDS>
@@ -185,7 +169,7 @@
    </BOUNDS>
    <PIN pinname="Select" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -212,8 +196,6 @@
    </NODE>
    <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Select">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Node" dstnodeid="17" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="2" dstpinname="Input Node">
    </LINK>
    <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="20">
@@ -233,5 +215,23 @@
    <LINK srcnodeid="12" srcpinname="String" dstnodeid="20" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="13" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="CreateNode (VVVV XElement)" filename="CreateNode (VVVV XElement).v4p" nodename="CreateNode (VVVV XElement)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2568" top="3228" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Node" visible="1">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <PIN pinname="Attributes" visible="1">
+   </PIN>
+   <PIN pinname="Attributes Bin Size" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Element" dstnodeid="1" dstpinname="Children">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Attribute" dstnodeid="1" dstpinname="Attributes">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Node" dstnodeid="17" dstpinname="Input">
    </LINK>
    </PATCH>
