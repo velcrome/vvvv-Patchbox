@@ -411,9 +411,9 @@
    </BOUNDS>
    <PIN pinname="Input Count" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="1" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="1">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="Size" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="Size">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -447,7 +447,7 @@
    </BOUNDS>
    <PIN pinname="Attributes" visible="1">
    </PIN>
-   <PIN pinname="Name" slicecount="1" values="PIN" visible="1">
+   <PIN pinname="Name" slicecount="1" visible="1" values="PIN">
    </PIN>
    <PIN pinname="Element" visible="1">
    </PIN>
@@ -647,5 +647,23 @@
    </LINKPOINT>
    <LINKPOINT x="7905" y="8520">
    </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="184" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4845" top="9045" width="915" height="1350">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4845" top="9045" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="184" dstpinname="Input String">
    </LINK>
    </PATCH>

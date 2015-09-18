@@ -2,10 +2,10 @@
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOScaler (VVVV) help.v4p" systemname="IOScaler (VVVV) help" filename="C:\vvvv\_contributions\lib\nodes\modules\reaktant\IOScaler\IOScaler (VVVV) help.v4p">
    <BOUNDS type="Window" left="2625" top="1065" width="9000" height="10110">
    </BOUNDS>
-   <NODE systemname="IOScaler (VVVV)" filename="IOScaler (VVVV).v4p" nodename="IOScaler (VVVV)" componentmode="InAWindow" id="0">
-   <BOUNDS type="Node" left="3750" top="7755" width="100" height="100">
+   <NODE systemname="IOScaler (VVVV)" filename="IOScaler (VVVV).v4p" nodename="IOScaler (VVVV)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="5880" top="3630" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3750" top="7755">
+   <BOUNDS type="Box" left="5880" top="3630">
    </BOUNDS>
    <PIN pinname="Size">
    </PIN>
@@ -15,11 +15,13 @@
    </PIN>
    <PIN pinname="Patch" visible="1">
    </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
-   <BOUNDS type="Node" left="270" top="7785" width="100" height="100">
+   <BOUNDS type="Node" left="480" top="5790" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="270" top="7785" width="765" height="1155">
+   <BOUNDS type="Box" left="480" top="5790" width="765" height="1155">
    </BOUNDS>
    <PIN pinname="Size" slicecount="1" values="9">
    </PIN>
@@ -33,9 +35,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="3">
-   <BOUNDS type="Node" left="270" top="6510" width="100" height="100">
+   <BOUNDS type="Node" left="480" top="4515" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="270" top="6510" width="2115" height="1110">
+   <BOUNDS type="Box" left="480" top="4515" width="2115" height="1110">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="vvvv">
    </PIN>
@@ -77,11 +79,11 @@
    <NODE componentmode="InABox" id="5" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="255" left="180" top="1335" type="Node" width="570">
    </BOUNDS>
-   <BOUNDS height="2325" left="180" top="1335" type="Box" width="5700">
+   <BOUNDS height="585" left="180" top="1335" type="Box" width="5625">
    </BOUNDS>
    <BOUNDS height="160" left="9060" top="15120" type="Window" width="215">
    </BOUNDS>
-   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|- place IOScaler inside patch where font sizes of IOBoxes should be scaled&cr;&lf;- start scaling an IOBox, then hold Shift&cr;&lf;&cr;&lf;limitations:&cr;&lf;- only 1 box at a time&cr;&lf;- does not take enumerations amount into account&cr;&lf;&cr;&lf;bug: IOBox sometimes not movable after scaling&cr;&lf;workaround: scale again without holding Shift&cr;&lf;does not happen when pressing Shift after Left Click|">
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|- place IOScaler inside patch where font sizes of IOBoxes should be scaled&cr;&lf;- start scaling an IOBox, then hold Alt&cr;&lf;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -91,21 +93,21 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="15">
-   <BOUNDS type="Node" left="3255" top="4980" width="100" height="100">
+   <BOUNDS type="Node" left="1875" top="2520" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3255" top="4980" width="3600" height="1245">
+   <BOUNDS type="Box" left="1875" top="2520" width="2730" height="1395">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
-   <PIN pinname="Size" slicecount="1" values="55">
+   <PIN pinname="Size" slicecount="1" values="17">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
-   <BOUNDS type="Node" left="765" top="4575" width="100" height="100">
+   <BOUNDS type="Node" left="630" top="2490" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="765" top="4575" width="2280" height="1410">
+   <BOUNDS type="Box" left="630" top="2490" width="660" height="1185">
    </BOUNDS>
-   <PIN pinname="Size" slicecount="1" values="20">
+   <PIN pinname="Size" slicecount="1" values="17">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="123">
    </PIN>
@@ -117,7 +119,7 @@
    </PIN>
    </NODE>
    <NODE systemname="ChangePatch (VVVV XElement)" filename="Common\ChangePatch (VVVV XElement).v4p" nodename="ChangePatch (VVVV XElement)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="3180" top="8820" width="100" height="100">
+   <BOUNDS type="Node" left="5520" top="4230" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Patch Change" visible="1" slicecount="1" values="||">
    </PIN>
@@ -127,7 +129,7 @@
    <LINK srcnodeid="0" srcpinname="Node Changes" dstnodeid="19" dstpinname="Patch Change">
    </LINK>
    <NODE systemname="PatchAlias (VVVV ActivePatch)" nodename="PatchAlias (VVVV ActivePatch)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="2715" top="6960" width="100" height="100">
+   <BOUNDS type="Node" left="5505" top="2685" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Patch" visible="1">
    </PIN>
@@ -138,4 +140,24 @@
    </LINK>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6780" top="2550" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6780" top="2550" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled">
+   </LINK>
    </PATCH>
