@@ -14,12 +14,12 @@
    <PIN pinname="Output String" slicecount="1" visible="0" values="||">
    </PIN>
    </NODE>
-   <NODE nodename="Operandomatic (VVVV)" componentmode="Hidden" id="0" systemname="Operandomatic (VVVV)" filename="modules\Operandomatic (VVVV).v4p">
+   <NODE nodename="Operandomatic (VVVV)" componentmode="Hidden" id="0" systemname="Operandomatic (VVVV)" filename="modules\Operandomatic (VVVV).v4p" stayontop="0">
    <BOUNDS type="Node" left="1230" top="2550" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1230" top="2550" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Window" left="3960" top="645" width="17820" height="13515">
+   <BOUNDS type="Window" left="1080" top="5010" width="21090" height="13515">
    </BOUNDS>
    <PIN pinname="Node Changes" visible="1">
    </PIN>
@@ -65,7 +65,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="669" top="1896" width="8319" height="5556">
    </BOUNDS>
-   <BOUNDS type="Window" left="27960" top="3270" width="8310" height="8760">
+   <BOUNDS type="Window" left="25995" top="1230" width="8310" height="8760">
    </BOUNDS>
    <PIN pinname="Patch" visible="1" slicecount="1" values="||">
    </PIN>

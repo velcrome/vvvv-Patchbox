@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch (VVVV XElement).v4p" systemname="ChangePatch" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch.v4p" scrollx="30" scrolly="4290">
-   <BOUNDS type="Window" left="27960" top="3270" width="8310" height="8760">
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch (VVVV XElement).v4p" systemname="ChangePatch" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="25995" top="1230" width="8310" height="8760">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
