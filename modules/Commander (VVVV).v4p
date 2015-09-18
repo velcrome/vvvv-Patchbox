@@ -1,17 +1,19 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Commander (VVVV).v4p" scrollx="0" scrolly="0" systemname="Commander (VVVV)" filename="C:\Users\velcrome\Desktop\Commander (VVVV).v4p">
-   <BOUNDS type="Window" left="10968" top="6552" width="7308" height="5328">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.100.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv-Patchbox\modules\Commander (VVVV).v4p" scrollx="60" scrolly="0" systemname="Commander (VVVV)" filename="C:\Users\velcrome\Desktop\Commander (VVVV).v4p">
+   <BOUNDS type="Window" left="16815" top="6390" width="7305" height="5325">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="34.100.0">
    </PACK>
    <NODE systemname="Zip (Value Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value Bin)" componentmode="Hidden" id="156" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="1605" top="1923" width="2415" height="270">
+   <BOUNDS type="Node" left="1605" top="2373" width="2415" height="270">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="140">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="175" systemname="IOBox (String)">
@@ -29,17 +31,19 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="176" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="4407" top="261" width="1170" height="270">
+   <BOUNDS type="Node" left="3768" top="489" width="1170" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4407" top="261" width="1044" height="540">
+   <BOUNDS type="Box" left="3768" top="489" width="3075" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Alt + Left / Right Cursor|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Alt + Left / Right / Up / Down  Cursor|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="177" systemname="IOBox (Value Advanced)">
@@ -63,7 +67,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="132" top="348" width="6732" height="11560">
    </BOUNDS>
-   <BOUNDS type="Window" left="11505" top="630" width="6720" height="11550">
+   <BOUNDS type="Window" left="3570" top="2610" width="10830" height="13140">
    </BOUNDS>
    <PIN pinname="Patch Bounds" visible="1">
    </PIN>
@@ -71,10 +75,16 @@
    </PIN>
    <PIN pinname="Patch" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="original bounds" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="167" srcpinname="Patch Bounds" dstnodeid="156" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="177" srcpinname="Y Output Value" dstnodeid="167" dstpinname="Units per Pixel" linkstyle="PolyLine">
+   <LINK srcnodeid="177" srcpinname="Y Output Value" dstnodeid="167" dstpinname="Units per Pixel" linkstyle="Bezier">
+   <LINKPOINT x="2505" y="1088">
+   </LINKPOINT>
+   <LINKPOINT x="2190" y="1088">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="178" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="1566" top="3816" width="792" height="240">
@@ -103,7 +113,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3468" top="3012" width="3645" height="1020">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Use Alt + Space to quickly hide and refresh the active patch window, or use Alt + Left/Right to snapmove it in the way usual windows behave when using Win + Left/Right|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Use Alt + Space to quickly hide and refresh the active patch window, or use Alt + Left / Right / Up / Down to snapmove it in the way usual windows behave when using Win + Left/Right|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -113,23 +123,29 @@
    </PIN>
    </NODE>
    <NODE systemname="PickRectangle (4d)" filename="Commander\PickRectangle (4d).v4p" nodename="PickRectangle (4d)" componentmode="Hidden" id="168">
-   <BOUNDS type="Node" left="3165" top="1365" width="100" height="100">
+   <BOUNDS type="Node" left="3165" top="1815" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="144" top="300" width="8460" height="8416">
+   <BOUNDS type="Box" left="144" top="750" width="8460" height="8416">
    </BOUNDS>
-   <BOUNDS type="Window" left="684" top="480" width="9372" height="7992">
+   <BOUNDS type="Window" left="14550" top="2055" width="9075" height="11565">
    </BOUNDS>
    <PIN pinname="Slots" visible="1" slicecount="16" values="0,0,840,1010,840,0,840,1010,1680,0,960,1040,2640,0,960,1040">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="4" values="1,1,1,1">
+   </PIN>
+   <PIN pinname="original bounds" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="140">
    </PIN>
    </NODE>
    <LINK srcnodeid="168" srcpinname="Rectangle" dstnodeid="156" dstpinname="Input 2">
    </LINK>
    <NODE systemname="SplitScreen (VVVV 4d)" filename="Commander\SplitScreen (VVVV 4d).v4p" nodename="SplitScreen (VVVV 4d)" componentmode="Hidden" id="174">
-   <BOUNDS type="Node" left="4395" top="885" width="100" height="100">
+   <BOUNDS type="Node" left="3765" top="1110" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="457" top="204" width="7869" height="8205">
+   <BOUNDS type="Box" left="0" top="429" width="7869" height="8205">
    </BOUNDS>
-   <BOUNDS type="Window" left="7320" top="2940" width="7860" height="8205">
+   <BOUNDS type="Window" left="7320" top="2940" width="9885" height="8205">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="174" srcpinname="Slots" dstnodeid="168" dstpinname="Slots">
@@ -151,9 +167,9 @@
    <LINK srcnodeid="156" srcpinname="Output" dstnodeid="169" dstpinname="Force to Patch Bounds">
    </LINK>
    <LINK srcnodeid="177" srcpinname="Y Output Value" dstnodeid="169" dstpinname="Units per Pixel" linkstyle="Bezier">
-   <LINKPOINT x="2167" y="1752">
+   <LINKPOINT x="2535" y="1778">
    </LINKPOINT>
-   <LINKPOINT x="3338" y="1816">
+   <LINKPOINT x="2940" y="1778">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Select (XElement)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Select (XElement)" componentmode="Hidden" id="181">
@@ -189,5 +205,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="182" srcpinname="Y Output Value" dstnodeid="181" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="167" srcpinname="original bounds" dstnodeid="168" dstpinname="original bounds" linkstyle="PolyLine">
    </LINK>
    </PATCH>
