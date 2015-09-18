@@ -235,6 +235,8 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
+   <PIN pinname="Always Active" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="25" dstpinname="Patch" linkstyle="VHV">
    <LINKPOINT x="885" y="1823">
@@ -260,7 +262,7 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    </NODE>
-   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Enabled">
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Enable">
    </LINK>
    <NODE systemname="SnapToGrid (VVVV)" filename="modules\SnapToGrid (VVVV).v4p" nodename="..\..\..\dev\vvvv\vvvv-Patchbox\modules\SnapToGrid (VVVV).v4p" componentmode="Hidden" id="27">
    <BOUNDS type="Node" left="9495" top="2550" width="100" height="100">
@@ -300,6 +302,30 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Enabled">
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Enable">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8160" top="2190" width="960" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8160" top="2190" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Always Active|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Always Active">
    </LINK>
    </PATCH>

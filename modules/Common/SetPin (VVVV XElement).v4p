@@ -4,7 +4,7 @@
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
-   <NODE systemname="CreatePin (VVVV XElement)" filename="CreatePin (VVVV XElement).v4p" nodename="CreatePin (VVVV XElement)" componentmode="InAWindow" id="0">
+   <NODE systemname="CreatePin (VVVV XElement)" filename="CreatePin (VVVV XElement).v4p" nodename="CreatePin (VVVV XElement)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2580" top="2175" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Element" visible="1">
@@ -47,7 +47,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4590" top="855" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -85,7 +85,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1125" top="855" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|Input Count|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Regular Expression|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>

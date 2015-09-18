@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\CreateNode (VVVV).v4p" systemname="CreateNode (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\CreateNode (VVVV).v4p">
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\CreateNode (VVVV XElement).v4p" systemname="CreateNode (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\CreateNode (VVVV).v4p">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
    <BOUNDS type="Box" left="1668" top="1500" width="792" height="240">
    </BOUNDS>
@@ -60,7 +60,7 @@
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output Node" dstnodeid="3" dstpinname="Attributes">
    </LINK>
-   <BOUNDS type="Window" left="5175" top="5640" width="7245" height="5535">
+   <BOUNDS type="Window" left="5175" top="5640" width="8250" height="3840">
    </BOUNDS>
    <LINK srcnodeid="3" srcpinname="Element" dstnodeid="4" dstpinname="Input Node">
    </LINK>

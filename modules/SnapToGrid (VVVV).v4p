@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\SnapToGrid (VVVV).v4p" systemname="SnapToGrid (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\SnapToGrid (VVVV).v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="7695" top="285" width="17655" height="15720">
+   <BOUNDS type="Window" left="3960" top="645" width="17820" height="13515">
    </BOUNDS>
    <NODE systemname="GetPatch (VVVV)" nodename="GetPatch (VVVV)" componentmode="Hidden" id="29">
    <BOUNDS type="Node" left="4115" top="635" width="2925" height="270">
@@ -103,7 +103,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enable">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -243,7 +243,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="480" top="840" width="2520" height="2970">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|v.1.0 by catweasel&cr;&lf;v.1.1 by reaktant&cr;&lf;v2.0 by velcrome&cr;&lf;&cr;&lf;- snaps everytime on change, but only while you hold Spacebar&cr;&lf;- scaling snap&cr;&lf;- y-axis grid size divided by 2|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|v0.5 by reaktant&cr;&lf;v1.0 by velcrome&cr;&lf;&cr;&lf;- snaps everytime on change, but only while you hold Spacebar&cr;&lf;- scaling snap&cr;&lf;- y-axis grid size divided by 2|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -409,11 +409,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="169" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8370" top="8130" width="1095" height="495">
+   <BOUNDS type="Box" left="8370" top="8130" width="630" height="450">
    </BOUNDS>
    <BOUNDS type="Node" left="8370" top="8130" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="1,1,2,2">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="1,2,1,2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -430,6 +430,10 @@
    <PIN pinname="Columns" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="172">
@@ -527,7 +531,7 @@
    </BOUNDS>
    <PIN pinname="Attribute" visible="1">
    </PIN>
-   <PIN pinname="Name" slicecount="1" values="id" visible="1">
+   <PIN pinname="Name" slicecount="1" visible="1" values="id">
    </PIN>
    <PIN pinname="Value" visible="1">
    </PIN>
