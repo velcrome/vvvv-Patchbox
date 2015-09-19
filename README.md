@@ -14,6 +14,9 @@ Authors:
 * sagashi
 * beyon
 * rmueller
+* reaktant 
+* sebl
+* sebescudie
 
 
 License
