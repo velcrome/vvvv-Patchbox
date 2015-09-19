@@ -108,7 +108,7 @@
    </NODE>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="21" dstpinname="Command and Arguments">
    </LINK>
-   <NODE systemname="CommandList (Regex)" filename="CommandList (Regex).v4p" nodename="CommandList (Regex).v4p" componentmode="InAWindow" id="24">
+   <NODE systemname="CommandList (Regex)" filename="CommandList (Regex).v4p" nodename="CommandList (Regex).v4p" componentmode="Hidden" id="24">
    <BOUNDS type="Node" left="1812" top="2688" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="648" top="96" width="4633" height="6771">

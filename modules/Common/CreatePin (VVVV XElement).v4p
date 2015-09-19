@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\CreatePin (VVVV XElement).v4p" scrollx="0" scrolly="0" systemname="CreatePin (VVVV XElement)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\CreatePin (VVVV XElement).v4p">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Box" left="1017" top="4578" width="900" height="660">
@@ -119,7 +119,9 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="8">
+   <PIN pinname="Y Input Value" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="-1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
@@ -178,7 +180,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="34.0.0">
    </PACK>
    <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="2925" top="2550" width="855" height="270">
@@ -187,7 +189,7 @@
    </PIN>
    <PIN pinname="Bin Size" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Intersperse" slicecount="1" values="CommaPlusSpace" visible="1">
+   <PIN pinname="Intersperse" slicecount="1" visible="1" values="CommaPlusSpace">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>

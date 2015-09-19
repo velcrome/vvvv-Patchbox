@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOMagic (VVVV).v4p" systemname="IOMagic" filename="C:\dev\vvvv\vvvv-Patchbox\IOMagic.v4p" scrollx="4140" scrolly="2520">
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOMagic (VVVV).v4p" systemname="IOMagic" filename="C:\dev\vvvv\vvvv-Patchbox\IOMagic.v4p" scrollx="3972" scrolly="8808">
    <BOUNDS type="Window" left="7740" top="12" width="16800" height="12372">
    </BOUNDS>
    <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="267">
@@ -475,7 +475,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="x2">
    </PIN>
-   <PIN pinname="Default" slicecount="1" values="1" visible="1">
+   <PIN pinname="Default" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -487,7 +487,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="text">
    </PIN>
-   <PIN pinname="Default" slicecount="1" values="1" visible="1">
+   <PIN pinname="Default" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -739,7 +739,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8148" top="4992" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="500,500">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="750,750">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="u">
    </PIN>
@@ -1275,7 +1275,7 @@
    <NODE systemname="Add (Value Spectral)" nodename="Add (Value Spectral)" componentmode="Hidden" id="711">
    <BOUNDS type="Node" left="9564" top="15816" width="336" height="276">
    </BOUNDS>
-   <PIN pinname="Bin Size" slicecount="1" values="2" visible="1">
+   <PIN pinname="Bin Size" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1411,7 +1411,7 @@
    <NODE systemname="Substitute (String)" nodename="Substitute (String)" componentmode="Hidden" id="721">
    <BOUNDS type="Node" left="10044" top="7800" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="From" slicecount="1" values="x" visible="1">
+   <PIN pinname="From" slicecount="1" visible="1" values="x">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>

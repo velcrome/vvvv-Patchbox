@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\CreatePatchlet (VVVV).v4p" systemname="CreatePatchlet (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\CreatePatchlet (VVVV).v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\CreatePatchlet (VVVV).v4p" systemname="CreatePatchlet (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\CreatePatchlet (VVVV).v4p" scrollx="0" scrolly="444">
    <BOUNDS type="Window" left="1140" top="1644" width="17820" height="13224">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="279" hiddenwhenlocked="1">
@@ -93,7 +93,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="450">
-   <BOUNDS type="Node" left="5232" top="4941" width="100" height="100">
+   <BOUNDS type="Node" left="5232" top="4224" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filter" visible="1" slicecount="3" values="mainloop,render9,tty">
    </PIN>
@@ -259,9 +259,9 @@
    <LINK srcnodeid="569" srcpinname="Output Node" dstnodeid="517" dstpinname="Patch">
    </LINK>
    <LINK srcnodeid="517" srcpinname="Comment" dstnodeid="541" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="5400" y="5002">
+   <LINKPOINT x="4968" y="4236">
    </LINKPOINT>
-   <LINKPOINT x="3312" y="4994">
+   <LINKPOINT x="3312" y="4992">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="424" srcpinname="Output" dstnodeid="513" dstpinname="Input">
@@ -271,7 +271,7 @@
    </BOUNDS>
    <PIN pinname="ID" visible="1" pintype="Output">
    </PIN>
-   <PIN pinname="Regular Expression" slicecount="1" values="|^\||?(make\smainloop||make\srender9||make\stty)\||?$|">
+   <PIN pinname="Regular Expression" slicecount="1" values="|^\||?(make\smainloop||make\srender9||make\stty)(.*?)\||?$|">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -339,11 +339,11 @@
    <LINK srcnodeid="703" srcpinname="Output" dstnodeid="691" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="517" srcpinname="Node ID" dstnodeid="703" dstpinname="Input" linkstyle="PolyLine">
-   <LINKPOINT x="7044" y="3948">
+   <LINKPOINT x="6372" y="3396">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="704">
-   <BOUNDS type="Node" left="7692" top="2784" width="780" height="276">
+   <BOUNDS type="Node" left="7296" top="2784" width="780" height="276">
    </BOUNDS>
    <PIN pinname="Mask" slicecount="1" values="*.v4p">
    </PIN>
@@ -355,7 +355,7 @@
    </PIN>
    </NODE>
    <NODE systemname="FileName (File Split)" nodename="FileName (File Split)" componentmode="Hidden" id="705">
-   <BOUNDS type="Node" left="7944" top="3288" width="100" height="100">
+   <BOUNDS type="Node" left="7944" top="3300" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Filename" visible="1">
    </PIN>
@@ -363,9 +363,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="704" srcpinname="Filenames" dstnodeid="705" dstpinname="Filename" linkstyle="VHV">
-   <LINKPOINT x="7752" y="3168">
+   <LINKPOINT x="7488" y="3168">
    </LINKPOINT>
-   <LINKPOINT x="7932" y="3168">
+   <LINKPOINT x="7800" y="3168">
    </LINKPOINT>
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="706">
@@ -377,15 +377,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="706" srcpinname="Bang" dstnodeid="704" dstpinname="Update" linkstyle="VHV">
-   <LINKPOINT x="10808" y="2508">
+   <LINKPOINT x="10676" y="2508">
    </LINKPOINT>
-   <LINKPOINT x="8584" y="2508">
+   <LINKPOINT x="8320" y="2508">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="707" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="7860" top="1296" width="2376" height="468">
+   <BOUNDS type="Box" left="7476" top="1296" width="2376" height="468">
    </BOUNDS>
-   <BOUNDS type="Node" left="7860" top="1296" width="0" height="0">
+   <BOUNDS type="Node" left="7476" top="1296" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\Patchlet">
    </PIN>
@@ -403,9 +403,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="707" srcpinname="Output String" dstnodeid="704" dstpinname="Directory" linkstyle="VHV">
-   <LINKPOINT x="7172" y="2114">
+   <LINKPOINT x="6784" y="2114">
    </LINKPOINT>
-   <LINKPOINT x="8620" y="2278">
+   <LINKPOINT x="8228" y="2278">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="708" systemname="IOBox (Value Advanced)">
@@ -441,9 +441,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="450" srcpinname="Filter Index" dstnodeid="710" dstpinname="Index" linkstyle="Bezier">
-   <LINKPOINT x="5648" y="5562">
+   <LINKPOINT x="5648" y="5082">
    </LINKPOINT>
-   <LINKPOINT x="7948" y="5598">
+   <LINKPOINT x="7948" y="5358">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="517" srcpinname="Comment" dstnodeid="682" dstpinname="Input">
@@ -451,9 +451,9 @@
    <LINK srcnodeid="710" srcpinname="Output" dstnodeid="518" dstpinname="Filename">
    </LINK>
    <LINK srcnodeid="704" srcpinname="Filenames" dstnodeid="710" dstpinname="Input" linkstyle="VHV" hiddenwhenlocked="0">
-   <LINKPOINT x="7836" y="2568">
+   <LINKPOINT x="7440" y="4500">
    </LINKPOINT>
-   <LINKPOINT x="7200" y="1968">
+   <LINKPOINT x="7188" y="4500">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="513" srcpinname="Output" dstnodeid="514" dstpinname="Input Node">
@@ -511,7 +511,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8220" top="7692" width="5256" height="5256">
    </BOUNDS>
-   <BOUNDS type="Window" left="-1" top="-1" width="5256" height="5256">
+   <BOUNDS type="Window" left="11400" top="5496" width="5256" height="5256">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="517" srcpinname="Node ID" dstnodeid="737" dstpinname="Node ID" linkstyle="PolyLine">
@@ -521,9 +521,9 @@
    <LINK srcnodeid="737" srcpinname="Delete Node" dstnodeid="424" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="740" systemname="IOBox (String)" hiddenwhenlocked="0">
-   <BOUNDS type="Box" left="6156" top="1260" width="1164" height="456">
+   <BOUNDS type="Box" left="5928" top="1260" width="1164" height="456">
    </BOUNDS>
-   <BOUNDS type="Node" left="6156" top="1260" width="0" height="0">
+   <BOUNDS type="Node" left="5928" top="1260" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="make">
    </PIN>
@@ -539,11 +539,13 @@
    </PIN>
    <BOUNDS>
    </BOUNDS>
+   <BOUNDS>
+   </BOUNDS>
    </NODE>
-   <LINK srcnodeid="705" srcpinname="Shortname" dstnodeid="450" dstpinname="Filter" linkstyle="Bezier">
-   <LINKPOINT x="8304" y="4542">
+   <LINK srcnodeid="705" srcpinname="Shortname" dstnodeid="450" dstpinname="Filter" linkstyle="VHV">
+   <LINKPOINT x="8316" y="3894">
    </LINKPOINT>
-   <LINKPOINT x="5484" y="3942">
+   <LINKPOINT x="5484" y="3894">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="741" systemname="IOBox (String)">
@@ -561,9 +563,9 @@
    </PIN>
    </NODE>
    <NODE systemname="PatchletCommand (Patchbox Regex)" filename="Regex\PatchletCommand (Patchbox Regex).v4p" nodename="PatchletCommand (Patchbox Regex)" componentmode="Hidden" id="739">
-   <BOUNDS type="Node" left="8004" top="4140" width="100" height="100">
+   <BOUNDS type="Node" left="7932" top="4224" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2807" top="960" width="10383" height="9076">
+   <BOUNDS type="Box" left="7932" top="4224" width="10383" height="9076">
    </BOUNDS>
    <BOUNDS type="Window" left="9672" top="2688" width="7776" height="6144">
    </BOUNDS>
@@ -574,24 +576,38 @@
    <PIN pinname="Prefix" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="682" srcpinname="ID" dstnodeid="739" dstpinname="Node ID" linkstyle="Bezier">
-   <LINKPOINT x="5484" y="3874">
+   <LINK srcnodeid="682" srcpinname="ID" dstnodeid="739" dstpinname="Node ID" linkstyle="VHV">
+   <LINKPOINT x="5760" y="3894">
    </LINKPOINT>
-   <LINKPOINT x="9192" y="3830">
+   <LINKPOINT x="8700" y="3894">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="706" srcpinname="Bang" dstnodeid="739" dstpinname="Set" linkstyle="VHV">
-   <LINKPOINT x="10944" y="3840">
+   <LINKPOINT x="10920" y="3600">
    </LINKPOINT>
-   <LINKPOINT x="9060" y="3840">
+   <LINKPOINT x="9012" y="3360">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="740" srcpinname="Output String" dstnodeid="739" dstpinname="Prefix" hiddenwhenlocked="0">
    </LINK>
-   <LINK srcnodeid="705" srcpinname="Shortname" dstnodeid="739" dstpinname="symbols" linkstyle="Bezier">
-   <LINKPOINT x="8184" y="3942">
-   </LINKPOINT>
-   <LINKPOINT x="8508" y="3738">
-   </LINKPOINT>
+   <LINK srcnodeid="705" srcpinname="Shortname" dstnodeid="739" dstpinname="symbols" linkstyle="PolyLine">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="742" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9456" top="3912" width="300" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9456" top="3912" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="742" srcpinname="Y Output Value" dstnodeid="739" dstpinname="Evaluate">
    </LINK>
    </PATCH>

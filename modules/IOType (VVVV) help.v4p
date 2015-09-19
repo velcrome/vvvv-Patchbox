@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="F:\vvvv\Patches\Perso\patchbox\IOType help.v4p">
-   <BOUNDS type="Window" left="19095" top="8535" width="6615" height="4065">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOType (VVVV) help.v4p">
+   <BOUNDS type="Window" left="6348" top="3216" width="6612" height="4056">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -24,15 +24,7 @@
    <PIN pinname="Output String" slicecount="1" visible="0" values="||">
    </PIN>
    </NODE>
-   <NODE nodename="IOType" componentmode="Hidden" id="0" systemname="IOType" filename="IOType.v4p">
-   <BOUNDS type="Node" left="1065" top="2070" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1065" top="2070" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Node Changes" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="ChangePatch (VVVV XElement)" filename="%VVVV%\girlpower\vvvv-Patchbox\modules\Common\ChangePatch (VVVV XElement).v4p" nodename="ChangePatch (VVVV XElement)" componentmode="Hidden" id="4">
+   <NODE systemname="ChangePatch (VVVV XElement)" filename="Common\ChangePatch (VVVV XElement).v4p" nodename="ChangePatch (VVVV XElement)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="690" top="2940" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="519" top="471" width="8319" height="5556">
@@ -47,9 +39,9 @@
    </PIN>
    <PIN pinname="Mark Patch as Changed" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Patch Changes" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Node Changes" dstnodeid="4" dstpinname="Patch Change">
-   </LINK>
    <NODE systemname="PatchAlias (VVVV)" nodename="PatchAlias (VVVV)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="705" top="1395" width="100" height="100">
    </BOUNDS>
@@ -65,19 +57,7 @@
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3720" top="1395" width="3660" height="1110">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3720" top="1395" width="1920" height="1380">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Select this IOBox and try the following shortcuts :&cr;&lf;&cr;&lf;Alt + I&cr;&lf;Alt + B&cr;&lf;Alt + F|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
@@ -96,6 +76,40 @@
    <PIN pinname="Size" slicecount="1" values="26">
    </PIN>
    </NODE>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="34.0.0">
    </PACK>
+   <NODE nodename="IOType (VVVV)" componentmode="Hidden" id="0" systemname="IOType (VVVV)" filename="IOType (VVVV).v4p">
+   <BOUNDS type="Node" left="1068" top="2076" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1065" top="2070" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Node Changes" visible="1">
+   </PIN>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="0" dstpinname="Patch">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Node Changes" dstnodeid="4" dstpinname="Patch Changes">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled">
+   </LINK>
+   <NODE id="8" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3720" top="1395" width="3660" height="1110">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3720" top="1395" width="1908" height="1512">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Select this IOBox and simply hit the following shortcuts :&cr;&lf;&cr;&lf;I for Integers&cr;&lf;B for Booleans&cr;&lf;F for Floats|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Real">
+   </PIN>
+   </NODE>
    </PATCH>
