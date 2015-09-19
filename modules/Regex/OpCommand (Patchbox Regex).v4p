@@ -1,0 +1,235 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Regex\OpCommand (Patchbox Regex).v4p" systemname="OpCommand (Regex)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Regex\OpCommand (Regex).v4p">
+   <NODE systemname="SetPin (VVVV XElement)" filename="..\Common\SetPin (VVVV XElement).v4p" nodename="SetPin (VVVV XElement)" componentmode="Hidden" id="10" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="2229" top="4863" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Values" visible="1" slicecount="1" values="|^\||?(\s\+||\s-||\s\*||\s\/||\s%||\s@||\s=||\s&lt;||\s&gt;||\si)[\s,]*([+-]?[0-9]+\.?[0-9]*)[\s,]*([+-]?[0-9]+\.?[0-9]*)?[\s,]*([+-]?[0-9]+\.?[0-9]*)?[\s,]*([+-]?[0-9]+\.?[0-9]*)?[\s,]*([+-]?[0-9]+\.?[0-9]*)?(\s.*?)\||?$|">
+   </PIN>
+   <PIN pinname="PinName" slicecount="1" values="|Regular Expression|">
+   </PIN>
+   <PIN pinname="BinSize" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Node Changes" visible="1">
+   </PIN>
+   <PIN pinname="Node ID" visible="1" slicecount="1" values="665">
+   </PIN>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)" hiddenwhenlocked="1">
+   <BOUNDS type="Box" left="6051" top="2832" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6051" top="2832" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Set">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="True">
+   </PIN>
+   </NODE>
+   <NODE systemname="PatchAlias (VVVV)" nodename="PatchAlias (VVVV)" componentmode="Hidden" id="13" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="549" top="4848" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Parent">
+   </PIN>
+   <PIN pinname="Parent Level" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ChangePatch (VVVV XElement)" filename="..\Common\ChangePatch (VVVV XElement).v4p" nodename="ChangePatch (VVVV XElement)" componentmode="Hidden" id="14" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="1497" top="5376" width="2328" height="276">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <PIN pinname="Patch Change" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Patch" dstnodeid="14" dstpinname="Patch">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Node Changes" dstnodeid="14" dstpinname="Patch Changes">
+   </LINK>
+   <NODE id="19" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Node ID|">
+   </PIN>
+   <BOUNDS type="Box" left="1017" top="1472" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1017" top="1472" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Node ID" linkstyle="Bezier">
+   <LINKPOINT x="1056" y="3282">
+   </LINKPOINT>
+   <LINKPOINT x="2772" y="3282">
+   </LINKPOINT>
+   </LINK>
+   <BOUNDS type="Window" left="11784" top="0" width="10836" height="12384">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="3024" top="3156" width="624" height="276">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="|(\+||-||\*||\/||%||@||=||&lt;||&gt;||i)|">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="|[\s,]*([+-]?[0-9]+\.?[0-9]*)[\s,]*([+-]?[0-9]+\.?[0-9]*)?[\s,]*([+-]?[0-9]+\.?[0-9]*)?[\s,]*([+-]?[0-9]+\.?[0-9]*)?|">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="(.*?)">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="CommentFrame (Regex)" filename="CommentFrame (Regex).v4p" nodename="CommentFrame (Regex).v4p" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="3072" top="3623" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="660" top="1795" width="12225" height="3657">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6336" top="5844" width="12216" height="3648">
+   </BOUNDS>
+   <PIN pinname="Remainder" visible="-1" slicecount="1" pintype="Input" values="(.*?)">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="21" dstpinname="Command and Arguments">
+   </LINK>
+   <NODE systemname="ValueSpread (Regex)" filename="ValueSpread (Regex).v4p" nodename="ValueSpread (Regex).v4p" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="3220" top="2704" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="624" top="418" width="7074" height="4573">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="7074" height="4573">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="20" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="CommandList (Regex)" filename="CommandList (Regex).v4p" nodename="CommandList (Regex).v4p" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="1812" top="2688" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="648" top="96" width="4633" height="6771">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="4633" height="6771">
+   </BOUNDS>
+   <PIN pinname="symbols" visible="1" slicecount="3" values="mainloop,render9,tty">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Prefix" slicecount="1" values="||" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="20" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="2940" top="60" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2940" top="60" width="2508" height="2280">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Input String" slicecount="10" values="\+,-,\*,\/,%,@,=,&lt;,&gt;,i">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Symbol">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="Hidden">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Changed" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Output String" dstnodeid="24" dstpinname="symbols">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="10" dstpinname="Values" linkstyle="Bezier">
+   <LINKPOINT x="3072" y="4380">
+   </LINKPOINT>
+   <LINKPOINT x="2448" y="4380">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="6060" top="3588" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Simulate" visible="1">
+   </PIN>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Simulate">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="30">
+   <BOUNDS type="Node" left="5760" top="4032" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Bang" dstnodeid="30" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Changed" dstnodeid="30" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="10" dstpinname="Set">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="48">
+   <BOUNDS type="Node" left="4848" top="4944" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4848" top="4944" width="1020" height="1380">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Input String" slicecount="10" values="\+,-,\*,\/,%,@,=,&lt;,&gt;,i">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Changed" visible="1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="49" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1824" top="2148" width="492" height="408">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1824" top="2148" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="make">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output String" dstnodeid="24" dstpinname="Prefix">
+   </LINK>
+   </PATCH>

@@ -1,0 +1,131 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\DeleteNode (VVVV XElement).v4p" systemname="DeleteNode (VVVV XElement)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\DeleteNode (VVVV XElement).v4p">
+   <NODE systemname="Attribute (XElement Join)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Attribute (XElement Join)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2223" top="2862" width="1104" height="276">
+   </BOUNDS>
+   <PIN pinname="Attribute" visible="1">
+   </PIN>
+   <PIN pinname="Name" slicecount="1" visible="1" values="MyAttribute">
+   </PIN>
+   <PIN pinname="Value" visible="1" slicecount="1" values="22">
+   </PIN>
+   <BOUNDS type="Box" left="2223" top="2862">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2247" top="2238" width="852" height="552">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2247" top="2238" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="2" visible="1" values="id,deleteme">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyAttribute">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Zip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (String)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="3285" top="2418" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="pronto">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3561" top="2076" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3561" top="2076" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="pronto">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE id="4" systemname="CreateNode (VVVV XElement)" filename="CreateNode (VVVV XElement).v4p" nodename="CreateNode (VVVV XElement)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1512" top="3324" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1509" top="3318" width="4000" height="3892">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5175" top="5640" width="7245" height="5535">
+   </BOUNDS>
+   <PIN pinname="Attributes" visible="1">
+   </PIN>
+   <PIN pinname="Node" visible="1">
+   </PIN>
+   <PIN pinname="Attributes Bin Size" slicecount="1" visible="1" values="2">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3240" top="1500" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3240" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Node ID|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3756" top="2832" width="300" height="264">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3756" top="2832" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="7" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1500" top="3756" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="3756" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Delete Node|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Node" dstnodeid="7" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Attribute" dstnodeid="4" dstpinname="Attributes">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Attributes Bin Size">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="0" dstpinname="Name">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="0" dstpinname="Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="2" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="2" dstpinname="Input 2">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="5256" height="5256">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   </PATCH>

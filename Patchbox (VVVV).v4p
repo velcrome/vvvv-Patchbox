@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p" scrollx="0" scrolly="0" systemname="Patchbox (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p">
-   <BOUNDS type="Window" left="6765" top="3420" width="13020" height="5955">
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p" scrollx="720" scrolly="912" systemname="Patchbox (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p">
+   <BOUNDS type="Window" left="6204" top="5868" width="13020" height="5952">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.0.0">
    </PACK>
@@ -19,7 +19,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1230" top="2550" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Window" left="1080" top="5010" width="21090" height="13515">
+   <BOUNDS type="Window" left="1836" top="696" width="18816" height="11232">
    </BOUNDS>
    <PIN pinname="Node Changes" visible="1">
    </PIN>
@@ -65,7 +65,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="669" top="1896" width="8319" height="5556">
    </BOUNDS>
-   <BOUNDS type="Window" left="25995" top="1230" width="8310" height="8760">
+   <BOUNDS type="Window" left="11604" top="1020" width="8304" height="8760">
    </BOUNDS>
    <PIN pinname="Patch" visible="1" slicecount="1" values="||">
    </PIN>
@@ -74,6 +74,8 @@
    <PIN pinname="Add to UNDO history" visible="1">
    </PIN>
    <PIN pinname="Mark Patch as Changed" visible="1">
+   </PIN>
+   <PIN pinname="Patch Changes" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="10" dstpinname="Patch">
@@ -89,7 +91,7 @@
    </PIN>
    <PIN pinname="Enable" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="11520" top="0" width="13020" height="12375">
+   <BOUNDS type="Window" left="7740" top="12" width="16800" height="12372">
    </BOUNDS>
    </NODE>
    <NODE systemname="Commander (VVVV)" filename="modules\Commander (VVVV).v4p" nodename="Commander (VVVV)" componentmode="Hidden" id="19">
@@ -158,6 +160,8 @@
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Enable">
@@ -311,7 +315,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8160" top="2190" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -323,9 +327,11 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Always Active|">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
    </PIN>
    </NODE>
    <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Always Active">
@@ -343,6 +349,8 @@
    </PIN>
    <PIN pinname="Patchlet Directory" visible="1">
    </PIN>
+   <PIN pinname="Reload Patchlets" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="30" srcpinname="Node Changes" dstnodeid="20" dstpinname="Input 6">
    </LINK>
@@ -353,9 +361,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="13776" top="1896" width="480" height="480">
+   <BOUNDS type="Box" left="13824" top="1944" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="13776" top="1896" width="0" height="0">
+   <BOUNDS type="Node" left="13824" top="1944" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -385,7 +393,11 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="Directory">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Patchlet Directory|">
+   </PIN>
    </NODE>
    <LINK srcnodeid="32" srcpinname="Output String" dstnodeid="30" dstpinname="Patchlet Directory">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="10" dstpinname="Patch Changes">
    </LINK>
    </PATCH>

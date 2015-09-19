@@ -1,0 +1,173 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Regex\MakeCommand (Regex).v4p" systemname="MakeCommand (Regex)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Regex\MakeCommand (Regex).v4p" scrollx="276" scrolly="864">
+   <NODE systemname="SetPin (VVVV XElement)" filename="..\Common\SetPin (VVVV XElement).v4p" nodename="SetPin (VVVV XElement)" componentmode="Hidden" id="5" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="2271" top="4875" width="3300" height="276">
+   </BOUNDS>
+   <PIN pinname="Values" visible="1" slicecount="1" values="|^\||?(make\smainloop||make\srender9||make\stty)(\s.*?)\||?$|">
+   </PIN>
+   <PIN pinname="PinName" slicecount="1" values="|Regular Expression|" visible="1">
+   </PIN>
+   <PIN pinname="BinSize" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Node Changes" visible="1">
+   </PIN>
+   <PIN pinname="Node ID" visible="1" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="9024" top="2448" width="11664" height="7392">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)" hiddenwhenlocked="1">
+   <BOUNDS type="Box" left="6213" top="3816" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6213" top="3816" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Set">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="False">
+   </PIN>
+   </NODE>
+   <NODE systemname="PatchAlias (VVVV)" nodename="PatchAlias (VVVV)" componentmode="Hidden" id="8" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="411" top="4884" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Parent">
+   </PIN>
+   <PIN pinname="Parent Level" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ChangePatch (VVVV XElement)" filename="..\Common\ChangePatch (VVVV XElement).v4p" nodename="ChangePatch (VVVV XElement)" componentmode="Hidden" id="9" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="1539" top="5388" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   <PIN pinname="Patch Change" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="16392" top="3684" width="8316" height="7452">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="12" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="3339" top="5316" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3339" top="5316" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3063" top="3216" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3063" top="3216" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="make">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="make">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Prefix">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="15" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="4299" top="1512" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4299" top="1512" width="768" height="1992">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="3" visible="1" values="mainloop,render9,tty">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="symbols">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Patch" dstnodeid="9" dstpinname="Patch">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Node Changes" dstnodeid="9" dstpinname="Patch Changes">
+   </LINK>
+   <NODE id="16" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Node ID|">
+   </PIN>
+   <BOUNDS type="Box" left="5175" top="3920" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5175" top="3920" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Node ID">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Node Changes" dstnodeid="12" dstpinname="Input Node">
+   </LINK>
+   <BOUNDS type="Window" left="9900" top="4656" width="10380" height="9072">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   <NODE systemname="CommandList (Regex)" filename="CommandList (Regex).v4p" nodename="CommandList (Regex).v4p" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="3067" top="3769" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="751" top="576" width="4633" height="6771">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="4633" height="6771">
+   </BOUNDS>
+   <PIN pinname="symbols" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output String" dstnodeid="17" dstpinname="Prefix">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output String" dstnodeid="17" dstpinname="symbols">
+   </LINK>
+   <NODE systemname="CommentFrame (Regex)" filename="CommentFrame (Regex).v4p" nodename="CommentFrame (Regex)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="3084" top="4380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Command and Arguments" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="18" dstpinname="Command and Arguments">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="5" dstpinname="Values">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1680" top="3756" width="1164" height="564">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1680" top="3756" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Regular Expression|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output String" dstnodeid="5" dstpinname="PinName">
+   </LINK>
+   </PATCH>

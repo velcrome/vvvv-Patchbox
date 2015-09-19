@@ -1,0 +1,155 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Regex\CommentFrame (Regex).v4p" scrollx="0" scrolly="0" systemname="CommentFrame (Regex)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Regex\CommentFrame (Regex).v4p">
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="0" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1509" top="1881" width="9216" height="276">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="|(\+||-||\*||\/||%||@||=||&lt;||&gt;||i)|">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="(\s.*?)">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 5" visible="1">
+   </PIN>
+   <PIN pinname="Input 4" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Intersperse" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)" hiddenwhenlocked="1">
+   <BOUNDS type="Box" left="1500" top="1500" width="444" height="252">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|^\||?|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="2" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="6969" top="1473" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6969" top="1473" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|\||?$|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="3" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="8373" top="1539" width="696" height="264">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8373" top="1539" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="None">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="0" dstpinname="Input 1" hiddenwhenlocked="1">
+   </LINK>
+   <NODE id="4" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Command and Arguments|">
+   </PIN>
+   <BOUNDS type="Box" left="3356" top="380" width="4500" height="500">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3558" top="436" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="0" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="0" dstpinname="Intersperse">
+   </LINK>
+   <NODE id="5" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <BOUNDS type="Box" left="1509" top="2657" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1509" top="2657" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="5" dstpinname="Input String">
+   </LINK>
+   <BOUNDS type="Window" left="6336" top="5844" width="12216" height="3648">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   <INFO author="" description="" tags="">
+   </INFO>
+   <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="0" dstpinname="Input 4">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5160" top="1212" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5160" top="1212" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="(.*?)">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="(\s.*?)">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Remainder">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="5196" top="1548" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="0" dstpinname="Input 3">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8496" top="372" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8496" top="372" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Allow Remainder|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="7" dstpinname="Select">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="5136" top="2304" width="4764" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5136" top="2304" width="1812" height="828">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|remainder would be nicer with a leading \s, but this breaks vvvv&apos;s regex|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>

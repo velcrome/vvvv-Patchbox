@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\SnapToGrid (VVVV).v4p" systemname="SnapToGrid (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\SnapToGrid (VVVV).v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\SnapToGrid (VVVV).v4p" systemname="SnapToGrid (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\SnapToGrid (VVVV).v4p" scrollx="0" scrolly="5088">
    <BOUNDS type="Window" left="3960" top="645" width="17820" height="13515">
    </BOUNDS>
    <NODE systemname="GetPatch (VVVV)" nodename="GetPatch (VVVV)" componentmode="Hidden" id="29">
@@ -122,7 +122,7 @@
    </LINK>
    <PACK Name="Image" Version="0.1.0">
    </PACK>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="34.0.0">
    </PACK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="84">
    <BOUNDS type="Node" left="7390" top="8150" width="100" height="100">
@@ -699,9 +699,9 @@
    <LINK srcnodeid="191" srcpinname="Output" dstnodeid="209" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="211" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7995" top="1470" width="480" height="480">
+   <BOUNDS type="Box" left="7839" top="2454" width="300" height="324">
    </BOUNDS>
-   <BOUNDS type="Node" left="7995" top="1470" width="0" height="0">
+   <BOUNDS type="Node" left="7839" top="2454" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -739,8 +739,6 @@
    <LINK srcnodeid="215" srcpinname="Space" dstnodeid="37" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="169" srcpinname="Y Output Value" dstnodeid="168" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="208" srcpinname="Up Edge" dstnodeid="211" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="216" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6555" top="1140" width="795" height="960">
@@ -807,5 +805,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="221" srcpinname="Output String" dstnodeid="190" dstpinname="Name">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="211" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
