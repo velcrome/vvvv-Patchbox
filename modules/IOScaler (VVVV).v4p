@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOScaler (VVVV).v4p" systemname="IOScaler" filename="C:\DATA\vvvv\IO SCALER\IOScaler.v4p" scrollx="0" scrolly="2832">
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOScaler (VVVV).v4p" systemname="IOScaler" filename="C:\DATA\vvvv\IO SCALER\IOScaler.v4p" scrollx="4620" scrolly="144">
    <INFO author="reaktant" description="IOScaler" tags="font node patch">
    </INFO>
    <BOUNDS type="Window" left="12105" top="1200" width="8490" height="12705">
@@ -143,36 +143,6 @@
    <LINK srcnodeid="62" srcpinname="Output" dstnodeid="90" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="90" srcpinname="Output" dstnodeid="69" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Keyboard (System Global Legacy2)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (System Global)" componentmode="Hidden" id="91" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="6975" top="7890" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Size">
-   </PIN>
-   <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Key" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (String)" componentmode="Hidden" id="93" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="6975" top="8190" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Size">
-   </PIN>
-   <PIN pinname="Keyboard" visible="1">
-   </PIN>
-   <PIN pinname="Key Match" slicecount="1" encoded="0" values="Menu">
-   </PIN>
-   <PIN pinname="ShiftKey" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="6975" top="8190">
-   </BOUNDS>
-   <PIN pinname="Menu" visible="1">
-   </PIN>
-   <PIN pinname="Space" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="91" srcpinname="Keyboard" dstnodeid="93" dstpinname="Keyboard">
    </LINK>
    <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="94">
    <BOUNDS type="Node" left="6015" top="9150" width="1950" height="270">
@@ -491,9 +461,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="183" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="165" top="7440" width="480" height="480">
+   <BOUNDS type="Box" left="9153" top="6048" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="165" top="7440" width="0" height="0">
+   <BOUNDS type="Node" left="9153" top="6048" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -507,12 +477,10 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Enable">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="94" dstpinname="Input 3" linkstyle="Bezier">
-   <LINKPOINT x="225" y="8520">
-   </LINKPOINT>
-   <LINKPOINT x="7905" y="8520">
-   </LINKPOINT>
+   <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="94" dstpinname="Input 3" linkstyle="PolyLine">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="184" systemname="IOBox (String)">
    <BOUNDS type="Box" left="960" top="8730" width="525" height="1320">
@@ -627,9 +595,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="191" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8265" top="7920" width="375" height="255">
+   <BOUNDS type="Box" left="7545" top="7464" width="375" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="8265" top="7920" width="0" height="0">
+   <BOUNDS type="Node" left="7545" top="7464" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -653,17 +621,27 @@
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="192">
    <BOUNDS type="Node" left="6990" top="8580" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Input 2" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="93" srcpinname="Menu" dstnodeid="192" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="192" srcpinname="Output" dstnodeid="94" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="191" srcpinname="Y Output Value" dstnodeid="192" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Mouse (Devices Desktop)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Desktop)" componentmode="Hidden" id="193">
+   <BOUNDS type="Node" left="6144" top="7428" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Right Button" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="193" srcpinname="Right Button" dstnodeid="192" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="193" dstpinname="Enabled">
    </LINK>
    </PATCH>

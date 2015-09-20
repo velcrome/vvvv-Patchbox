@@ -196,7 +196,7 @@
    </NODE>
    <LINK srcnodeid="168" srcpinname="Rectangle" dstnodeid="156" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="SplitScreen (VVVV 4d)" filename="Commander\SplitScreen (VVVV 4d).v4p" nodename="SplitScreen (VVVV 4d)" componentmode="InAWindow" id="174">
+   <NODE systemname="SplitScreen (VVVV 4d)" filename="Commander\SplitScreen (VVVV 4d).v4p" nodename="SplitScreen (VVVV 4d)" componentmode="Hidden" id="174">
    <BOUNDS type="Node" left="3765" top="1110" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="429" width="7869" height="8205">
