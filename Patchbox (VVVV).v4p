@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p" scrollx="0" scrolly="0" systemname="Patchbox (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p" scrollx="330" scrolly="0" systemname="Patchbox (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p">
    <BOUNDS type="Window" left="1932" top="1908" width="15300" height="8520">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
    <BOUNDS type="Node" left="708" top="5028" width="5100" height="600">
@@ -249,10 +249,12 @@
    </BOUNDS>
    <PIN pinname="Changed Nodes" visible="1">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Always Active" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="12600" height="15150">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="25" dstpinname="Patch" linkstyle="VHV">
    <LINKPOINT x="956" y="1848">
@@ -263,9 +265,9 @@
    <LINK srcnodeid="25" srcpinname="Node Changes" dstnodeid="20" dstpinname="Input 4">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7452" top="1950" width="480" height="480">
+   <BOUNDS type="Box" left="8952" top="1980" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7452" top="1950" width="0" height="0">
+   <BOUNDS type="Node" left="8952" top="1980" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -319,32 +321,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Enable">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8232" top="2190" width="960" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8232" top="2190" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Always Active|">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="7">
-   </PIN>
-   <PIN pinname="Pin Visibility" slicecount="1" values="False">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Always Active">
    </LINK>
    <NODE systemname="CreatePatchlet (VVVV)" filename="modules\CreatePatchlet (VVVV).v4p" nodename="CreatePatchlet (VVVV)" componentmode="Hidden" id="30">
    <BOUNDS type="Node" left="13716" top="2556" width="2280" height="276">

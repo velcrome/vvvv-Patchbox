@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOMagic (VVVV).v4p" systemname="IOMagic" filename="C:\dev\vvvv\vvvv-Patchbox\IOMagic.v4p" scrollx="3180" scrolly="4848">
    <BOUNDS type="Window" left="7740" top="12" width="16800" height="12372">
    </BOUNDS>
@@ -190,7 +190,7 @@
    </NODE>
    <LINK srcnodeid="279" srcpinname="Y Output Value" dstnodeid="283" dstpinname="Input 1">
    </LINK>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="393">
    <BOUNDS type="Node" left="14574" top="13710" width="100" height="100">
