@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p" scrollx="330" scrolly="0" systemname="Patchbox (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p">
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p" scrollx="0" scrolly="0" systemname="Patchbox (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p">
    <BOUNDS type="Window" left="1932" top="1908" width="15300" height="8520">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
@@ -279,6 +279,8 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Enable">
    </LINK>
@@ -423,5 +425,7 @@
    <LINK srcnodeid="30" srcpinname="Node Changes" dstnodeid="20" dstpinname="Input 7">
    </LINK>
    <LINK srcnodeid="33" srcpinname="Node Changes" dstnodeid="20" dstpinname="Input 6">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="25" dstpinname="Enable">
    </LINK>
    </PATCH>
