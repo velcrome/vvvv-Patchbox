@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOScaler (VVVV).v4p" systemname="IOScaler" filename="C:\DATA\vvvv\IO SCALER\IOScaler.v4p" scrollx="3180" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\IOScaler (VVVV).v4p" systemname="IOScaler" filename="C:\DATA\vvvv\IO SCALER\IOScaler.v4p" scrollx="4170" scrolly="15">
    <INFO author="reaktant" description="IOScaler" tags="font node patch">
    </INFO>
    <BOUNDS type="Window" left="0" top="0" width="12600" height="15150">
@@ -39,7 +39,7 @@
    </PIN>
    </NODE>
    <NODE systemname="AsString (Value)" nodename="AsString (Value)" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="10065" top="8475" width="100" height="100">
+   <BOUNDS type="Node" left="8850" top="8295" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -186,7 +186,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="181" systemname="IOBox (String)">
    <BOUNDS type="Box" left="8355" top="9360" width="420" height="240">
@@ -219,7 +219,7 @@
    </PIN>
    <PIN pinname="BinSize" visible="1">
    </PIN>
-   <PIN pinname="Values" visible="1">
+   <PIN pinname="Values" visible="1" slicecount="1" values="7">
    </PIN>
    <PIN pinname="Element" visible="1">
    </PIN>
@@ -233,6 +233,8 @@
    </PIN>
    <PIN pinname="Size" slicecount="1" values="7">
    </PIN>
+   <BOUNDS type="Window" left="25395" top="4305" width="12000" height="7095">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="181" srcpinname="Output String" dstnodeid="185" dstpinname="PinName">
    </LINK>
@@ -680,12 +682,6 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Output" dstnodeid="69" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="185" dstpinname="Values" linkstyle="Bezier">
-   <LINKPOINT x="10195" y="9218">
-   </LINKPOINT>
-   <LINKPOINT x="8750" y="9218">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="225">
    <BOUNDS type="Node" left="11925" top="10080" width="100" height="100">
    </BOUNDS>
@@ -847,5 +843,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="237" srcpinname="Y Output Value" dstnodeid="202" dstpinname="Spread">
+   </LINK>
+   <NODE systemname="Select (String)" filename="" nodename="Select (String)" componentmode="Hidden" id="238">
+   <BOUNDS type="Node" left="8835" top="9300" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="192" srcpinname="Output" dstnodeid="238" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Output" dstnodeid="238" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="238" srcpinname="Output" dstnodeid="185" dstpinname="Values">
    </LINK>
    </PATCH>

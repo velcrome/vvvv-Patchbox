@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Commander (VVVV).v4p" scrollx="60" scrolly="0" systemname="Commander (VVVV)" filename="C:\Users\velcrome\Desktop\Commander (VVVV).v4p">
-   <BOUNDS type="Window" left="7296" top="4296" width="7296" height="5316">
+   <BOUNDS type="Window" left="0" top="0" width="12600" height="15150">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="Zip (Value Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value Bin)" componentmode="Hidden" id="156" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="1605" top="2373" width="2415" height="270">
@@ -159,9 +159,9 @@
    <LINK srcnodeid="181" srcpinname="Output" dstnodeid="178" dstpinname="Input Node">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="182" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="420" top="2205" width="480" height="480">
+   <BOUNDS type="Box" left="7380" top="1440" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="420" top="2205" width="0" height="0">
+   <BOUNDS type="Node" left="7380" top="1440" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>

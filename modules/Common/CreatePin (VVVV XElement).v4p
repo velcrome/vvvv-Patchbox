@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\CreatePin (VVVV XElement).v4p" scrollx="75" scrolly="0" systemname="CreatePin (VVVV XElement)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\CreatePin (VVVV XElement).v4p">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Box" left="2520" top="5568" width="900" height="660">
@@ -97,21 +97,21 @@
    <NODE id="6" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Values">
    </PIN>
-   <BOUNDS type="Box" left="5589" top="480" width="750" height="240">
+   <BOUNDS type="Box" left="5595" top="330" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5589" top="480" width="750" height="240">
+   <BOUNDS type="Node" left="5595" top="330" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output String" visible="1">
    </PIN>
    <PIN pinname="Input String" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="0" top="0" width="12600" height="15150">
+   <BOUNDS type="Window" left="25395" top="4305" width="12000" height="7095">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
-   <BOUNDS type="Node" left="7482" top="285" width="100" height="100">
+   <BOUNDS type="Node" left="6615" top="330" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7482" top="285" width="792" height="900">
+   <BOUNDS type="Box" left="6615" top="330" width="792" height="900">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
@@ -135,9 +135,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1887" top="309" width="915" height="975">
+   <BOUNDS type="Box" left="1890" top="330" width="915" height="975">
    </BOUNDS>
-   <BOUNDS type="Node" left="1887" top="309" width="0" height="0">
+   <BOUNDS type="Node" left="1890" top="330" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
@@ -194,7 +194,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="5250" top="3405" width="855" height="270">
@@ -480,34 +480,12 @@
    <LINKPOINT x="4245" y="8955">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Zip (String Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (String Bin)" componentmode="Hidden" id="74">
-   <BOUNDS type="Node" left="1875" top="1650" width="5670" height="270">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 2 Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Input 1 Bin Size" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Output Bin Size" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="74" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="74" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="74" dstpinname="Input 2 Bin Size">
-   </LINK>
    <NODE systemname="Unzip (String Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (String Bin)" componentmode="Hidden" id="75">
    <BOUNDS type="Node" left="1875" top="2055" width="5670" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
-   <PIN pinname="Input Bin Size" visible="1">
+   <PIN pinname="Input Bin Size" visible="1" slicecount="2" values="0,0">
    </PIN>
    <PIN pinname="Output 2 Bin Size" visible="1">
    </PIN>
@@ -518,10 +496,6 @@
    <PIN pinname="Output 1 Bin Size" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="74" srcpinname="Output" dstnodeid="75" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="74" srcpinname="Output Bin Size" dstnodeid="75" dstpinname="Input Bin Size">
-   </LINK>
    <LINK srcnodeid="75" srcpinname="Output 2 Bin Size" dstnodeid="18" dstpinname="Input" linkstyle="Bezier">
    <LINKPOINT x="7485" y="2843">
    </LINKPOINT>
@@ -584,8 +558,6 @@
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    </NODE>
-   <LINK srcnodeid="76" srcpinname="Y Output Value" dstnodeid="74" dstpinname="Input 1 Bin Size">
-   </LINK>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="77">
    <BOUNDS type="Node" left="7500" top="3030" width="100" height="100">
    </BOUNDS>
@@ -633,5 +605,31 @@
    <LINK srcnodeid="61" srcpinname="Y Output Value" dstnodeid="72" dstpinname="Select">
    </LINK>
    <LINK srcnodeid="67" srcpinname="Y Output Value" dstnodeid="72" dstpinname="Input">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="80">
+   <BOUNDS type="Node" left="6600" top="1305" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="80" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Zip (String Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (String Bin)" componentmode="Hidden" id="81">
+   <BOUNDS type="Node" left="1875" top="1650" width="5670" height="270">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="81" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="81" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Output" dstnodeid="75" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Output Bin Size" dstnodeid="75" dstpinname="Input Bin Size">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Y Output Value" dstnodeid="81" dstpinname="Input 1 Bin Size">
+   </LINK>
+   <LINK srcnodeid="80" srcpinname="Output" dstnodeid="81" dstpinname="Input 2 Bin Size">
    </LINK>
    </PATCH>

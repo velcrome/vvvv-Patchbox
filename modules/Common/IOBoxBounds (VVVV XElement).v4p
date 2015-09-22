@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\IOBoxBounds (VVVV XElement).v4p" systemname="ReadIOBox (VVVV XElement)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ReadIOBox (VVVV XElement).v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\IOBoxBounds (VVVV XElement).v4p" systemname="ReadIOBox (VVVV XElement)" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ReadIOBox (VVVV XElement).v4p" scrollx="0" scrolly="2220">
    <NODE id="0" nodename="XPath (XML)" systemname="XPath (XML)">
    <BOUNDS height="270" left="2595" top="4050" type="Node" width="1470">
    </BOUNDS>
@@ -35,7 +35,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 5" slicecount="1" values="&apos;]/@values" visible="1">
+   <PIN pinname="Input 5" slicecount="1" visible="1" values="&apos;]/@values">
    </PIN>
    <PIN pinname="Input 4" visible="1">
    </PIN>
@@ -140,7 +140,7 @@
    </NODE>
    <BOUNDS type="Window" left="8625" top="1350" width="11700" height="9390">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="33.7.0">
    </PACK>
    <NODE id="13" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
    <BOUNDS left="4605" top="2280" width="960" height="585" type="Box">
@@ -513,7 +513,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="4" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="4">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -545,7 +545,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="2" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
