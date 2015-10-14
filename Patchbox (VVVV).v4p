@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
    <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p" scrollx="0" scrolly="0" systemname="Patchbox (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p">
    <BOUNDS type="Window" left="1920" top="1905" width="12105" height="12585">
    </BOUNDS>
-   <PACK Name="addonpack" Version="33.7.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
    <BOUNDS type="Node" left="945" top="1500" width="5100" height="600">
@@ -101,11 +101,11 @@
    </PIN>
    <BOUNDS type="Box" left="8370" top="5535">
    </BOUNDS>
-   <PIN pinname="Node Changes" visible="1">
+   <PIN pinname="Node Changes" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Enable" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="7740" top="12" width="16800" height="12372">
+   <BOUNDS type="Window" left="2235" top="240" width="16800" height="12360">
    </BOUNDS>
    <PIN pinname="Cell Size" slicecount="2" values="750,250">
    </PIN>

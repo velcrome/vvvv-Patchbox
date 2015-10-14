@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch (VVVV XElement).v4p" systemname="ChangePatch" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="11520" top="4020" width="8316" height="5556">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch (VVVV XElement).v4p" systemname="ChangePatch" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch.v4p" scrollx="0" scrolly="3210">
+   <BOUNDS type="Window" left="16392" top="3684" width="8316" height="7452">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.0.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE systemname="SetPatch (VVVV)" nodename="SetPatch (VVVV)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="2103" top="4596" width="4740" height="276">
@@ -177,7 +177,7 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="324" top="5097" width="5595" height="7155">
+   <BOUNDS type="Box" left="324" top="5097" width="13395" height="6735">
    </BOUNDS>
    <BOUNDS type="Node" left="324" top="5097" width="0" height="0">
    </BOUNDS>
@@ -188,6 +188,10 @@
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="14" dstpinname="Input String">
