@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p" scrollx="0" scrolly="0" systemname="Patchbox (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.5.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p" scrollx="0" scrolly="1860" systemname="Patchbox (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p">
    <BOUNDS type="Window" left="1920" top="1905" width="12105" height="12585">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
    <BOUNDS type="Node" left="945" top="1500" width="5100" height="600">
@@ -71,9 +71,9 @@
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enable">
    </LINK>
    <NODE systemname="ChangePatch (VVVV XElement)" filename="modules\Common\ChangePatch (VVVV XElement).v4p" nodename="ChangePatch (VVVV XElement)" componentmode="Hidden" id="10">
-   <BOUNDS type="Node" left="2892" top="11313" width="3990" height="270">
+   <BOUNDS type="Node" left="2892" top="13113" width="3990" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2892" top="11313" width="8319" height="5556">
+   <BOUNDS type="Box" left="2892" top="13113" width="8319" height="5556">
    </BOUNDS>
    <BOUNDS type="Window" left="11604" top="1020" width="8304" height="8760">
    </BOUNDS>
@@ -89,9 +89,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="10" dstpinname="Patch" linkstyle="VHV">
-   <LINKPOINT x="2915" y="7560">
+   <LINKPOINT x="2915" y="8160">
    </LINKPOINT>
-   <LINKPOINT x="2920" y="7560">
+   <LINKPOINT x="2920" y="8760">
    </LINKPOINT>
    </LINK>
    <NODE systemname="IOMagic (VVVV)" filename="modules\IOMagic (VVVV).v4p" nodename="IOMagic (VVVV)" componentmode="Hidden" id="18">
@@ -185,9 +185,9 @@
    <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Enable">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="5520" top="10485" width="480" height="480">
+   <BOUNDS type="Box" left="5520" top="12285" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5520" top="10485" width="0" height="0">
+   <BOUNDS type="Node" left="5520" top="12285" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -205,9 +205,9 @@
    <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Add to UNDO history">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6840" top="10710" width="480" height="480">
+   <BOUNDS type="Box" left="6840" top="12510" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="6840" top="10710" width="0" height="0">
+   <BOUNDS type="Node" left="6840" top="12510" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -503,7 +503,7 @@
    </PIN>
    <PIN pinname="Input 7" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Comment Command Prompt|">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Patching Behaviour|">
    </PIN>
    </NODE>
    <LINK srcnodeid="27" srcpinname="Node Changes" dstnodeid="37" dstpinname="Input 2">
@@ -583,15 +583,95 @@
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Evaluate">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="43" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="4200" top="10830" width="300" height="285">
+   <BOUNDS type="Box" left="4200" top="12630" width="300" height="285">
    </BOUNDS>
-   <BOUNDS type="Node" left="4200" top="10830" width="0" height="0">
+   <BOUNDS type="Node" left="4200" top="12630" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="43" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="43" srcpinname="Output Node" dstnodeid="10" dstpinname="Patch Changes">
    </LINK>
+   <NODE systemname="ChangeIOCount (VVVV)" filename="modules\ChangeIOCount (VVVV).v4p" nodename="ChangeIOCount (VVVV)" componentmode="InAWindow" id="44">
+   <BOUNDS type="Node" left="6240" top="10560" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Node Changes" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Patch" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Zip (XElement Bin)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (XElement Bin)" componentmode="Hidden" id="45" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="4185" top="11220" width="5220" height="270">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 4" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 5" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 6" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 7" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Patching Behaviour|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="45" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="43" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Node Changes" dstnodeid="45" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7455" top="10005" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7455" top="10005" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="44" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="44" dstpinname="Patch" linkstyle="VHV">
+   <LINKPOINT x="2925" y="10320">
+   </LINKPOINT>
+   <LINKPOINT x="6270" y="10320">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="47" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="855" top="10845" width="8205" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="855" top="10845" width="3015" height="1005">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|these patches allow rapid configuration of nodes, e.g. pin count etc.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <PACK Name="vvvv-Message" Version="2.9.8">
+   </PACK>
    </PATCH>
