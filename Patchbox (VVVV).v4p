@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="D:\Documents\dev\vvvv-Patchbox\Patchbox (VVVV).v4p" scrollx="0" scrolly="2246" systemname="Patchbox (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.5.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p" scrollx="0" scrolly="3480" systemname="Patchbox (VVVV)" filename="C:\dev\vvvv\vvvv-Patchbox\Patchbox (VVVV).v4p">
    <BOUNDS type="Window" left="6818" top="1008" width="12103" height="12579">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -703,6 +703,8 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="ShowV4Folders (VVVV)" filename="modules\ShowV4Folders (VVVV).v4p" componentmode="Hidden" id="50" nodename="ShowV4Folders (VVVV)">
    <BOUNDS type="Node" left="6293" top="11767" width="100" height="100">
@@ -715,6 +717,8 @@
    </PIN>
    <PIN pinname="Patch" visible="1">
    </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="50" dstpinname="Patch" linkstyle="VHV">
    <LINKPOINT x="2921" y="11452">
@@ -723,5 +727,7 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Evaluate">
    </LINK>
    </PATCH>
