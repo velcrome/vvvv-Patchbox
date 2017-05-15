@@ -689,9 +689,9 @@
    <LINK srcnodeid="45" srcpinname="Output" dstnodeid="43" dstpinname="Input Node">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="66" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7546" top="11144" width="480" height="480">
+   <BOUNDS type="Box" left="9016" top="11264" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="7546" top="11144" width="0" height="0">
+   <BOUNDS type="Node" left="9016" top="11264" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -706,12 +706,12 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ShowV4Folders (VVVV)" filename="modules\ShowV4Folders (VVVV).v4p" componentmode="Hidden" id="50" nodename="ShowV4Folders (VVVV)">
-   <BOUNDS type="Node" left="6293" top="11767" width="100" height="100">
+   <NODE systemname="ShowV4Folders (VVVV)" filename="modules\ShowV4Folders (VVVV).v4p" componentmode="InAWindow" id="50" nodename="ShowV4Folders (VVVV)">
+   <BOUNDS type="Node" left="6308" top="12022" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6293" top="11767" width="4800" height="3600">
+   <BOUNDS type="Box" left="6308" top="12022" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2758" top="2625" width="8995" height="7280">
+   <BOUNDS type="Window" left="2745" top="2625" width="9615" height="7905">
    </BOUNDS>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
@@ -719,15 +719,49 @@
    </PIN>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Custom Directories" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Patch" dstnodeid="50" dstpinname="Patch" linkstyle="VHV">
-   <LINKPOINT x="2921" y="11452">
+   <LINKPOINT x="2925" y="11670">
    </LINKPOINT>
-   <LINKPOINT x="6319" y="11452">
+   <LINKPOINT x="6345" y="11670">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Enabled">
+   <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Enabled" linkstyle="VHV">
+   <LINKPOINT x="9015" y="11865">
+   </LINKPOINT>
+   <LINKPOINT x="7215" y="11865">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Evaluate">
+   <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Evaluate" linkstyle="VHV">
+   <LINKPOINT x="9015" y="11865">
+   </LINKPOINT>
+   <LINKPOINT x="7650" y="11865">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="67" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6735" top="11265" width="2175" height="495">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6735" top="11265" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="2" visible="1" values="c:\temp,c:\dev\vvvv\vvvv-sdk">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Output String" dstnodeid="50" dstpinname="Custom Directories">
    </LINK>
    </PATCH>
