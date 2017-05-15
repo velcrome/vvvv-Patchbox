@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.1.dtd" >
-   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch (VVVV XElement).v4p" systemname="ChangePatch" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch.v4p" scrollx="0" scrolly="3210">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.5.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch (VVVV XElement).v4p" systemname="ChangePatch" filename="C:\dev\vvvv\vvvv-Patchbox\modules\Common\ChangePatch.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="16392" top="3684" width="8316" height="7452">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="SetPatch (VVVV)" nodename="SetPatch (VVVV)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="2103" top="4596" width="4740" height="276">
@@ -222,4 +222,6 @@
    </LINK>
    <LINK srcnodeid="15" srcpinname="Output" dstnodeid="1" dstpinname="XML Input">
    </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.8">
+   </PACK>
    </PATCH>

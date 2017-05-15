@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="D:\Documents\dev\vvvv-Patchbox\modules\ChangeIOCount (VVVV).v4p" systemname="ChangeIOCount (VVVV)" filename="D:\Documents\dev\vvvv-Patchbox\modules\ChangeIOCount (VVVV).v4p" scrollx="35" scrolly="-360">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.5.dtd" >
+   <PATCH nodename="C:\dev\vvvv\vvvv-Patchbox\modules\ChangeIOCount (VVVV).v4p" systemname="ChangeIOCount (VVVV)" filename="D:\Documents\dev\vvvv-Patchbox\modules\ChangeIOCount (VVVV).v4p" scrollx="35" scrolly="-360">
    <BOUNDS type="Window" left="1463" top="490" width="8666" height="8729">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -257,9 +257,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="114" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5299" top="4620" width="903" height="371">
+   <BOUNDS type="Box" left="5299" top="4260" width="855" height="630">
    </BOUNDS>
-   <BOUNDS type="Node" left="5299" top="4620" width="0" height="0">
+   <BOUNDS type="Node" left="5299" top="4260" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="2" visible="1" values="Unzip,Output">
    </PIN>
@@ -295,11 +295,11 @@
    <LINK srcnodeid="110" srcpinname="Node Name" dstnodeid="116" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="117" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3178" top="4242" width="945" height="805">
+   <BOUNDS type="Box" left="1468" top="2442" width="975" height="2190">
    </BOUNDS>
-   <BOUNDS type="Node" left="3178" top="4242" width="0" height="0">
+   <BOUNDS type="Node" left="1468" top="2442" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="5" visible="1" values="Cons,Group,Zip,Input,InputMorph">
+   <PIN pinname="Input String" slicecount="11" visible="1" values="Cons,Group,Zip,Input,InputMorph,UnZip,OR,AND,+,-,*">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -307,7 +307,7 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="5">
+   <PIN pinname="Rows" slicecount="1" values="11">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
@@ -430,4 +430,6 @@
    </LINK>
    <LINK srcnodeid="126" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Enabled">
    </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.8">
+   </PACK>
    </PATCH>
